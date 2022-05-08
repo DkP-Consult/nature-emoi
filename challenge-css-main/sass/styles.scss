@@ -1,0 +1,294 @@
+/* Imports */
+
+@import 'partials/colors';
+@import 'partials/fonts';
+
+/* Styles */
+
+body {
+  margin: 0;
+  width: 1908px;
+  box-sizing: border-box;
+}
+
+header {
+
+  display: flex;
+}
+.background {
+  background-image: url("../src/images/bg.jpg");
+  height: 750px;
+  width: 1915px;
+}
+.logo img{
+  padding-top: 120px;
+  padding-left: 120px;
+  width: 157px;
+  height: 67px;
+}
+.title {
+  color: $white;
+  padding-top: 160px;
+  padding-left: 250px;
+  padding-right: 903px;
+  font-size: 25px;
+  width: 608px;
+
+}
+.nav-bar, a {
+  list-style: none;
+  color : $white;
+  text-decoration: none;
+
+}
+
+.logo {
+  display: flex;
+}
+.nav-bar {
+  display: flex;
+  padding-top: 132px;
+  justify-content: space-between;
+  padding-left: 75px;
+}
+.nav-bar li {
+  margin-right: 50px;
+}
+
+/* Section pictogrammes */
+
+section.pictogrammes {
+  height: 343px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.pictogrammes img {
+  width: 65px;
+  height: 54px;
+
+}
+.magasin {
+  font-size: 25px;
+  width: 195px;
+}
+.retrait{
+  font-size: 25px;
+  width: 250px;
+}
+.livraison {
+ font-size: 25px;
+ width: 300px;
+}
+
+/* Section meilleures ventes */
+
+.meilleuresventes {
+  height: 850px;
+  margin : 0 50px;
+
+}
+.meilleuresventes h1 {
+  font-size: 60px;
+  margin-bottom: 0;
+}
+span {
+  display: block;
+  content: '';
+  width: 75px;
+  height: 13px;
+  background-color: $light-green;
+  margin-top: 10px;
+}
+
+.vignettes {
+  display: flex;
+  flex-direction: row;
+}
+
+.plante-1 {
+  background-image: url(../src/images/nos_meilleures_ventes/1.jpg);
+  background-size: cover;
+  width: 411px;
+  height: 568px;
+  flex: 1;
+  position: relative;
+  margin-top: 20px;
+}
+
+.plante-2 {
+  background-image: url(../src/images/nos_meilleures_ventes/2.jpg);
+  background-size: cover;
+  width: 411px;
+  height: 568px;
+  flex: 1;
+  position: relative;
+  margin-top: 20px;
+}
+
+.plante-3 {
+  background-image: url(../src/images/nos_meilleures_ventes/3.jpg);
+  background-size: cover;
+  width: 411px;
+  height: 568px;
+  flex: 1;
+  position: relative;
+  margin-top: 20px;
+}
+
+.plante-4 {
+  background-image: url(../src/images/nos_meilleures_ventes/4.jpg);
+  background-size: cover;
+  width: 411px;
+  height: 568px;
+  flex: 1;
+  position: relative;
+  margin-top: 20px;
+}
+
+.bottom {
+  background-color: $blanc-transparent;
+  color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 107px;
+}
+.prix {
+  color : $light-green;
+}
+.btn {
+  align-self: flex-end;
+  background-color: $light-green;
+  margin-right: 50px;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.btn a {
+  border: solid 0px ;
+  border-radius: 30px;
+}
+
+.nom, .prix {
+  padding-left: 15px;
+  padding-top: 10px;
+    p {
+      margin-top: 10px;
+      margin-bottom: -25px;
+      padding-top: 10px;
+      position: relative;
+    }
+}
+
+/* Nos Plantes */
+
+.nos-plantes {
+  height: 2000px;
+  margin: 0 50px;
+}
+
+.nos-plantes h1 {
+  font-size: 60px;
+  margin-bottom: 0;
+}
+.grid-vignettes {
+  display:grid;
+  min-height: 150vh;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 430px);
+  padding-top: 30px;
+  grid-gap: 15px;
+}
+
+.grid-plante-1 {
+  background-image: url(../src/images/nos_plantes/1.jpg);
+  background-size: cover;
+  grid-column: 1/3;
+  grid-row: 1/3;
+  position: relative;
+}
+.grid-plante-2 {
+  background-image: url(../src/images/nos_plantes/2.jpg);
+  background-size: cover;
+  grid-column: 3/5;
+    position: relative;
+}
+.grid-plante-3 {
+  background-image: url(../src/images/nos_plantes/3.jpg);
+  background-size: cover;
+  grid-column: 3/5;
+  position: relative;
+}
+.grid-plante-4 {
+  background-image: url(../src/images/nos_plantes/4.jpg);
+  background-size: cover;
+  grid-column: 1;
+  grid-row: 3/5;
+  position: relative;
+}
+.grid-plante-5 {
+  background-image: url(../src/images/nos_plantes/5.jpg);
+  background-size: cover;
+  grid-column: 2/4;
+  grid-row: 3/5;
+  position: relative;
+}
+.grid-plante-6 {
+  background-image: url(../src/images/nos_plantes/6.jpg);
+  background-size: cover;
+  grid-row: 3/5;
+  grid-column: 4;
+    position: relative;
+}
+
+.grid-bottom {
+  background-color: $blanc-transparent;
+  color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 107px;
+}
+.grid-prix {
+  color : $light-green;
+}
+.grid-btn {
+  align-self: flex-end;
+  background-color: $light-green;
+  margin-right: 50px;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.grid-btn a {
+  border: solid 0px ;
+  border-radius: 30px;
+}
+
+.grid-nom, .grid-prix {
+  padding-left: 15px;
+  padding-top: 10px;
+    p {
+      margin-top: 10px;
+      margin-bottom: -25px;
+      padding-top: 10px;
+      position: relative;
+    }
+}
+
+/* Footer */
+footer {
+
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+  margin: 0 50px;
+}
