@@ -1,0 +1,42 @@
+legend {
+	color: black;
+	background: white;
+	height: 60px;
+	background-color: transparent;
+	padding-bottom: 20px;
+}
+
+fieldset {
+	max-width: 350px;
+	margin: auto;
+	padding-bottom: 3em;
+	background: url("https://cdn.pixabay.com/photo/2016/01/12/12/38/post-it-1135321_960_720.png");
+}
+
+.section {
+	padding-left: 3em;
+	padding-top: 1em;
+	font-size: 16px;
+	font-weight: bold;
+}
+.une {
+	color: purple;
+}
+.deux {
+	color: green;
+}
+.sous-section {
+	padding-left: 4em;
+	padding-top: 1em;
+	color: blue;
+}
+.code {
+	color: black;
+}
+
+input[type="checkbox"] + label {
+}
+input[type="checkbox"]:checked + label {
+	text-decoration: line-through;
+	color: white;
+}
