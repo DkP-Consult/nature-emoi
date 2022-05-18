@@ -481,3 +481,8 @@ ul li:after {
 ul li:last-child:after {
   height: 15px;
 }
+
+.description a {
+  font-weight: bold;
+  font-style: normal;
+}
