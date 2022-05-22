@@ -35,7 +35,7 @@ Users should be able to:
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [https://dkp-consult.github.io/exercices/frontendmentor/nft-preview-card-component-main/index.html]
 
-## My process
+## My proces
 
 ### Built with
 
