@@ -4,16 +4,16 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ## Table of contents
 
-- [Overview](#overview)
+  - [Overview](#overview)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
+  - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+  - [Author](#author)
+  - [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -21,10 +21,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-/* Editing later - When i upload a live portfolio on website */
+- Solution URL: [https://www.frontendmentor.io/solutions/mobilefirst-solution-using-htmlsasscss-H1B1mMCIq]
+- Live Site URL: [https://dkp-consult.github.io/exercices/frontendmentor/qr-code-component-main/index.html]
 
 ## My process
 
@@ -46,7 +44,7 @@ Making other Frontend Mentor challenge. Working on differents Figma.
 ### Useful resources
 
 - [MDN Web Docs](https://developer.mozilla.org/fr/) - This helped me for syntax.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+
 
 ## Author
 
