@@ -1,0 +1,279 @@
+@font-face 
+{
+    font-family: 'recursivesans_linear_light';
+    src: url('font/recursive_vf_1.078-webfont.woff2') format('woff2'),
+         url('font/recursive_vf_1.078-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body
+{
+	background-image: url(../images/fond.jpg);
+	background-attachment: fixed;
+	background-size: 100%;
+	font-family : 'recursivesans_linear_light', 'arial', 'sans-serif;'
+}
+
+
+#main_wraper
+{
+	width: 96%;
+	margin: auto;
+
+}
+p, ul
+{
+	color : black; 
+	width: 75%;
+	flex-wrap: wrap; 
+	word-wrap: break-word;
+}
+h1, h2, h3, footer
+{
+	text-transform: uppercase;
+}
+header
+{
+	border-width: 1px;
+	border-bottom: solid;
+	border-color: black;
+}
+/*Menu & bannière*/
+nav ul 
+{
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+}
+nav a
+{
+font-size: 1em;
+text-transform: uppercase;
+color: whitesmoke;
+text-decoration: none;
+}
+
+nav a:hover
+{
+	color: yellow;
+	border-bottom: 1px solid yellow;
+}
+.box
+{
+	justify-content: space-between;
+	display: block;
+}
+.push, .index, .blog, .cv, .cdg
+{
+	border: 0px solid black;
+	margin-left: auto;
+	white-space: nowrap;
+
+}
+.push
+{
+	position: absolute;
+	top : 6em;
+	right: 2em;
+	bottom: 80%;
+	left: 80%;
+	height : 3em;
+	width : 30em;
+	font-weight: bolder;
+}
+/*Menu & bannière*/
+/*Présentation*/
+#presentation
+{
+	display: block;
+}
+aside
+{
+	display: inline-block;
+	position: absolute;
+	right: 2em;
+	left: 75%;
+	top: 16em;
+	border-style: solid;
+	border-color: yellow;
+	border-width: 2px;
+	background-clip: border-box;
+}
+aside
+{
+	border-radius: 10px 100px / 120px;
+	background-color: whitesmoke;
+	opacity: 0.6;
+}
+
+aside h3
+{
+	text-align: center;
+	border-bottom: 0px solid black;
+}
+
+span 
+{
+	border-bottom: 2px black solid;
+}
+aside ul 
+{
+	list-style : circle;
+	text-align: justify;
+	position: relative;
+	left: 15%;
+	
+}
+aside li 
+{
+	margin-bottom: 0.3em;
+	font-size: 1em;
+	color: black;
+	font-weight: bolder;
+}
+aside a 
+{
+	color: black;
+	text-decoration: none;
+}
+aside a:hover
+{
+	color: black;
+	border-bottom: 2px solid black;	
+}
+#logo
+{
+	display: block;
+	position : relative;
+	top: 1em;
+	bottom: 1em;
+	left: 2em;
+}
+#presentation
+{
+	
+	border: px solid black;
+	width: 65%;
+	padding: 1em;
+	text-align: justify;
+	margin-top: 2em;
+}
+#presentation p 
+{
+	width: 100%;
+}
+/*Presentation*/
+/*Objectif*/
+#obj
+{
+	
+	border: 0px solid black;
+	width: 65%;
+	justify-content: center;
+	padding: 1em;
+	text-align: justify;
+	margin-top: 2em;
+}
+#obj p 
+{
+	width: 100%;
+}
+/*Objectif*/
+
+/*Presentation pour le responsive*/
+#presentationresponsive
+{
+	display: none;
+}
+/*Presentation pour le responsive*/
+
+/*Pieds de page*/
+footer
+{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	border-top: solid 2px black;
+	margin : 2em;
+	flex-wrap: nowrap;
+}
+footer a
+{
+	font-weight: bolder;
+	color: yellow;
+
+}
+#twit
+{
+	font-weight: bolder;
+	color: blue;
+}
+/*Pieds de page*/
+
+/*Responsive under*/
+
+@media all and (max-width: 1200px)
+{
+	body
+	{
+		background-color: #C3C3C3;
+		background-image: none;
+	}
+	nav
+	{
+		width: auto;
+	}
+	nav ul
+	{
+		flex-direction: column;
+	}
+	    nav li
+    {
+        padding-bottom: 0.3em;
+    }
+    
+    nav a
+    {
+        font-size: 1.1em;
+    }
+    
+    nav a:hover
+    {
+        border-bottom: 0;
+    }
+    .push
+    {
+    	position: absolute;
+    	top: 2em;
+    	left: 1em;
+    	right: 0.5em;
+    }
+    aside
+    {
+    	display: none;
+    }
+    #presentation, article, #obj
+    {
+    	width: auto;
+    }
+    #presentationresponsive
+    {
+    display: block;
+    padding: 1em;
+    }
+    #presentationresponsive a
+    {
+    	text-decoration: none;
+    	color: black;
+    }
+    #presentationresponsive a:hover
+    {
+    	border-bottom: 2px solid black ;
+    }
+    footer
+    {
+    	font-size: 0.7em;
+    }
+
+}
