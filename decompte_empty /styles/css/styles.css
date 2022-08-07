@@ -1,0 +1,229 @@
+/* All informations about site -> global setup */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+   font-family: "Hermitage";
+   src: url("../../fonts/Hermitage.woff") format("woff");
+}
+@font-face {
+   font-family: "BadScript";
+   src: url("../../fonts/BadScript-Regular.ttf") format("truetype");
+}
+@font-face {
+   font-family: "Outfit";
+   src: url("../../fonts/Outfit-VariableFont_wght.ttf") format("truetype");
+}
+
+/* All informations about site -> global setup */
+
+/* All informations about cases -> cases setup */
+.main {
+  background-image: url('../../images/background-square.png');
+  width: 526px;
+  height: 560px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.case {
+  display: inline-flex;
+  justify-content: flex-start;
+  width: 100px;
+  height: 90px;
+  position: relative;
+  border: solid 1px black;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.09);
+
+}
+.case p{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.case a{
+  position: absolute;
+  width: 100px;
+  height: 90px;
+  z-index:3;
+}
+
+/* All informations about cases -> cases setup */
+/* All informations about header & footer -> header & footer setup */
+
+.banner {
+  width: 100%;
+  height: 170px;
+  background-color: rgba(197, 69, 69, 0.46);
+}
+.banner a {
+  text-decoration: none;
+  color: white;
+}
+
+.banner h1{
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  font-family: 'Hermitage', 'BadScript', 'Outfit', 'sans-serif';
+  font-size: 50px;
+}
+.banner h2 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 0px;
+  font-family: 'BadScript','Outfit', 'sans-serif';
+}
+
+.house {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  top: -110px;
+  left: 30px;
+  background-image: url(../../images/housew.svg);
+  background-size: cover;
+  position: relative;
+}
+
+footer {
+  width: 100%;
+  height: 45px;
+  background-color: rgba(187, 189, 150, 0.46);
+  bottom: 0;
+  position:absolute;
+}
+.madeby {
+  color: rgba(102, 99, 99, 1);
+  line-height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Outfit';
+
+}
+.madeby a {
+  text-decoration: none;
+  padding-left: 5px;
+  color: rgba(231, 130, 130, 1);
+}
+.madeby a:hover {
+  color: rgba(197, 69, 69, 1);
+}
+
+/* All informations about header & footer -> header & footer setup */
+/* All informations pages -> global pages setup */
+
+.image img {
+  max-width: 250px;
+  max-height: 300px;
+}
+
+.content{
+  font-family: 'Outfit', 'sans-serif';
+  background-color: rgba(202, 191, 197, 0.65);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  box-shadow:
+}
+
+.text {
+  padding: 15px;
+}
+.text p {
+  padding-top: 10px;
+}
+/* All informations pages -> global pages setup */
+/* All informations pages -> particulars pages setup */
+
+.picleft {
+  float : left;
+  padding-right: 10px;
+}
+.picright {
+  float : right;
+  padding-right: 10px;
+}
+.picpadding {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.piccenter {
+  position: relative;
+  left: 20%;
+  padding-top: 10px;
+}
+.picpaddingbottom {
+  padding-bottom: 10px;
+}
+
+.piclarge img {
+  max-width: 350px;
+  max-height: 400px;
+}
+.picdouble {
+  position: relative;
+  left: 6%;
+  padding-top: 10px;
+}
+.picdoubleb {
+  position: relative;
+  left: 13%;
+  padding-top: 10px;
+}
+.textwhite {
+  color: white;
+}
+.textbolder {
+  font-weight: bolder;
+}
+.textsmall {
+  font-size: 12px;
+}
+.italic {
+  font-style: italic;
+}
+
+.centertext {
+  text-align: center;
+}
+.textlink {
+  text-decoration: none;
+}
+.textlink:hover {
+  text-decoration: underline;
+  color: darkblue;
+}
+
+.contentresize {
+  min-width: 250px;
+  min-height: 320px
+}
+
+.contentscroll {
+  max-width: 526px;
+  max-height: 560px;
+  scroll-behavior: auto;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+
+/* All informations pages -> particulars pages setup */
