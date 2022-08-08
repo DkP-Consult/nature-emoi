@@ -1,0 +1,22 @@
+/* Need to fix footer now */
+footer {
+    text-align: center;
+    border-top: solid 2px black;
+    margin: 2em;
+    flex-wrap: nowrap;
+    position: absolute;
+    /* bottom: ; */
+    width: 80%;
+    display: inline-flex;
+    justify-content: space-between;
+  }
+  footer a {
+    font-weight: bolder;
+    color: black;
+    font-size: 0.75em;
+    text-decoration: none;
+  }
+  footer a:hover {
+    color: darkblue;
+    text-decoration: underline;
+  }

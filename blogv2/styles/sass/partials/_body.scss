@@ -1,0 +1,10 @@
+@import "colors";
+
+body {
+  background-color: $background;
+  background-attachment: fixed;
+  background-size: 100%;
+  font-family: "recursivesans_linear_light", "arial", "sans-serif;";
+  width: 80%;
+  margin: auto;
+}

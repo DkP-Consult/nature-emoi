@@ -1,0 +1,42 @@
+.corppage {
+margin-top: 2em;
+margin-bottom: 2em;
+width: 67%;
+height: 100%;
+border: 0px solid black; /*Border pour designe */
+margin-left: 3em;
+}
+.centredepage {
+display: flex;
+align-items: stretch;
+}
+
+.corppage h2 {
+color : red;
+text-decoration: underline;
+}
+.corppage h3 {
+color : blue;
+font-weight: 500;
+
+}
+.annee {
+font-size: 12px;
+color : grey;
+margin-bottom: -1em;
+padding-top : 2em;
+}
+.taches {
+padding-bottom: 1em;
+font-size: 17px;
+text-decoration: underline 1px solid grey;
+}
+.experiencepro p {
+font-style: italic;
+margin-top: -1em;
+}
+.formation p {
+font-size: 13px;
+font-style: italic;
+margin-top : -1em;
+}

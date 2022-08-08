@@ -1,0 +1,9 @@
+@mixin btn-shadow {
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255, .5),
+  7px 7px 20px 0px rgba(0,0,0,.1),
+  4px 4px 5px 0px rgba(0,0,0,.1);
+}
+@mixin btn-background {
+  background: rgb(0,172,238);
+background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+}

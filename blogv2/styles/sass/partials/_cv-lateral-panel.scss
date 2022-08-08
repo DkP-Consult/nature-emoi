@@ -1,0 +1,44 @@
+.panneau-lateral {
+margin-top: 2em;
+margin-bottom: 2em;
+width: 20%; /* ou 300px */
+height: 1300;
+border : 0px solid black; /* Border pour design */
+background-color : #8eb0e8;
+padding-left: 1em;
+padding-right: 1em;
+text-align : justify
+}
+
+.nom {
+height : 250px;
+text-align : center;
+}
+.coordonnees {
+height : 150px;
+list-style-type : none;
+}
+.titrecoordonnees {
+text-decoration: underline;
+padding-bottom: 1em;
+}
+.profil {
+height: 250px;
+}
+.profil h3 {
+text-decoration: underline;
+}
+.competence {
+height : 250px;
+}
+.titres-competence {
+padding-bottom: 1em;
+text-decoration: underline;
+}
+.interets {
+height : 250px;
+}
+.titre-interets {
+padding-bottom : 1em;
+text-decoration: underline;
+}

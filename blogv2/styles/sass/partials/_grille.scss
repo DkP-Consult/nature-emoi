@@ -1,0 +1,240 @@
+@import "colors";
+
+.blog {
+    margin-top: 3em;
+    margin-right: 3em;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 0px solid black;
+    perspective: 1000px;
+  }
+  .blog-fond {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  .blog:hover .blog-fond {
+    transform: rotateY(180deg);
+  }
+  .blog-avant,
+  .blog-arriere {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  .blog-avant {
+    background-color: $flipcard-front;
+    color: $flipcard-front-txt;
+    font-style: center;
+  }
+  .blog-arriere {
+    background-color : $flipcard-back;
+    color: $flipcard-back-txt;
+    transform: rotateY(180deg);
+  }
+  .blog-avant h2 {
+    padding-top: 35%;
+  }
+  .blog-arriere h2 {
+    padding-top: 35%;
+  }
+  .cv {
+    margin-top: 3em;
+    margin-right: 3em;
+    background-color: transparent;
+    width: 300px;
+    height: 670px;
+    border: 0px solid black;
+    perspective: 1000px;
+  }
+  .cv-fond {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  .cv:hover .cv-fond {
+    transform: rotateY(180deg);
+  }
+  .cv-avant,
+  .cv-arriere {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  .cv-avant {
+    background-color: $flipcard-front;
+    color: $flipcard-front-txt;
+    font-style: center;
+  }
+  .cv-arriere {
+    background-color : $flipcard-back;
+    color: $flipcard-back-txt;
+    transform: rotateY(180deg);
+  }
+  .cv-avant h2 {
+    padding-top: 35%;
+  }
+  .cv-arriere h2 {
+    padding-top: 35%;
+  }
+  .services {
+    margin-top: 3em;
+    margin-right: 3em;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 0px solid black;
+    perspective: 1000px;
+  }
+  .services-fond {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  .services:hover .services-fond {
+    transform: rotateY(180deg);
+  }
+  .services-avant,
+  .services-arriere {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  .services-avant {
+    background-color: $flipcard-front;
+    color: $flipcard-front-txt;
+    font-style: center;
+  }
+  .services-arriere {
+    background-color : $flipcard-back;
+    color: $flipcard-back-txt;
+    transform: rotateY(180deg);
+  }
+  .services-avant h2 {
+    padding-top: 35%;
+  }
+  .services-arriere h2 {
+    padding-top: 35%;
+  }
+  .portfolio {
+    margin-top: 3em;
+    margin-right: 3em;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 0px solid black;
+    perspective: 1000px;
+  }
+  .portfolio-fond {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  .portfolio:hover .portfolio-fond {
+    transform: rotateY(180deg);
+  }
+  .portfolio-avant,
+  .portfolio-arriere {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  .portfolio-avant {
+    background-color: $flipcard-front;
+    color: $flipcard-front-txt;
+    font-style: center;
+  }
+  .portfolio-arriere {
+    background-color : $flipcard-back;
+    color: $flipcard-back-txt;
+    transform: rotateY(180deg);
+  }
+  .portfolio-avant h2 {
+    padding-top: 35%;
+  }
+  .portfolio-arriere h2 {
+    padding-top: 35%;
+  }
+  .ressources {
+    margin-top: 3em;
+    margin-right: 3em;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 0px solid black;
+    perspective: 1000px;
+  }
+  .ressources-fond {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  .ressources:hover .ressources-fond {
+    transform: rotateY(180deg);
+  }
+  .ressources-avant,
+  .ressources-arriere {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  .ressources-avant {
+    background-color: $flipcard-front;;
+    color: $flipcard-front-txt;
+    font-style: center;
+  }
+  .ressources-arriere {
+    background-color : $flipcard-back;
+    color: $flipcard-back-txt;
+    transform: rotateY(180deg);
+  }
+  .ressources-avant h2 {
+    padding-top: 35%;
+  }
+  .ressources-arriere h2 {
+    padding-top: 35%;
+  }
+  .vignettes {
+    display: grid;
+    grid-template-columns: repeat(5, fr);
+    grid-template-rows: repeat(5, fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    margin: auto;
+  }
+  .blog {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .services {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+  .portfolio {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+  .ressources {
+    grid-area: 3 / 3 / 4 / 4;
+  }
+  .cv {
+    grid-area: 2 / 4 / 4 / 5;
+  }
