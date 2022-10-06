@@ -1,0 +1,16 @@
+#navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 15vw;
+  height: 100vh;
+  background-color: red;
+}
+
+#welcome-section {
+  min-height: 100vh;
+}
+
+@media all and (max-width: 1200px) {
+  background-color: red;
+}

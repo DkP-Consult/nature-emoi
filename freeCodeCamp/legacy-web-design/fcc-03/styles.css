@@ -1,0 +1,11 @@
+#nav-bar {
+  position: fixed;
+  display: flex;
+}
+
+@media all and (max-width: 1200px) {
+  background-color: red;
+}
+@media query all and {
+
+}

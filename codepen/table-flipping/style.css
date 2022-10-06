@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+.content {
+  width: 50vw;
+  background-color: green;
+  margin: auto;
+
+}
+.title img {
+  max-width: 100%;
+  position : relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top : 3vh;
+}
+.title {
+  margin: 3vh;
+}
+.table {
+  margin : 2vh;
+  display: flex;
+  padding-bottom: 2vh;
+}
+.table img {
+  max-width: 150px;
+  max-height: 150px;
+}
+.table p {
+  color : white;
+  margin: 2vh;
+  border: solid 1px black;
+  justify-content: center;
+  vertical-align: middle;
+}
+.btn {
+  width: 15vw;
+  height: 5vh;
+  background-color: white;
+  position : relative;
+  left: 45%;
+  bottom : 2vh;
+  transform: translate(-50%);
+  border-radius: 25vh;
+  text-align: center;
+  vertical-align: middle;
+  display: inline;
+  padding: 1vh;
+  margin-top: 2vw;
+  margin-bottom: 2vh;
+}
+.btn-link {
+  text-decoration: none;
+  padding-bottom : 2vh;
+  vertical-align: middle;
+  display: inline;
+  color : black;
+}

@@ -1,0 +1,15 @@
+#navbar {
+  display: flex;
+  position: fixed;
+  left: 0;
+  width: 15vw;
+  height: 100vh;
+  flex-direction: column;
+  background-color: red;
+}
+#main-doc {
+  margin-left: 15vw;
+}
+@media all and (max-width: 1200px) {
+  background-color: red;
+}

@@ -1,0 +1,77 @@
+<html lang="fr">
+    <head>
+			<meta charset="utf-8">
+			<link rel="stylesheet" href="styles.css">
+			<title>Titre de la pages</title>
+    </head>
+	<body>
+  <main>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form action="" id="survey-form">
+
+      <div class="form-group">
+      <label for="name" id="name-label">Name</label>
+      <input type="text" id="name" placeholder="Name" required>
+      </div>
+
+      <div class="form-group">
+      <label for="email" id="email-label">email</label>
+      <input type="email" id="email" placeholder="Enter email" required>
+      </div>
+
+      <div class="form-group">
+      <label for="age" id="number-label">number</label>
+      <input type="number" id="age" min="15" max="150" placeholder="Numbers between 15 & 150" required>
+      </div>
+
+      <div class="form-group">
+        <p>Select options</p>
+          <select id="dropdown" name="Options">
+            <option value="">--Please select--</option>
+            <option value="one">One</option>
+            <option value="two">two</option>
+            <option value="three">three</option>
+            <option value="four">four</option>
+          </select>
+      </div>
+
+      <div class="form-group">
+      <input type="radio" name="case" value="one">
+      <label for="one">one</label>
+      <input type="radio" name="case" value="two">
+      <label for="two">two</label>
+      <input type="radio" name="case" value="three">
+      <label for="three">three</label>
+      </div>
+
+      <div class="form-group">
+      <input type="checkbox" name="checkcase" value="onecheck">
+      <label for="chekcase">Check it !1</label>
+      </div>
+
+      <div class="form-group">
+      <input type="checkbox" name="checkcase" value="onecheck">
+      <label for="chekcase">Check it !2</label>
+      </div>
+
+      <div class="form-group">
+      <input type="checkbox" name="checkcase" value="onecheck">
+      <label for="chekcase">Check it !3</label>
+      </div>
+
+      <div class="form-group">
+        <label for="story">Tell us your story:</label>
+        <textarea id="story" name="story" rows="5" cols="33">
+        Tel us...
+        </textarea>
+      </div>
+
+      <div class="form-group">
+        <input type="submit" value="Envoyer le formulaire" id="submit">
+      </div>
+
+    </form>
+  </main>
+	</body>
+</html>

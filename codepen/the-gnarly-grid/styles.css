@@ -1,0 +1,29 @@
+html {
+  font: 500 100%/1.4 system-ui;
+}
+body {
+  margin: 25px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 45px;
+}
+
+.card {
+  border-radius: 25px;
+  padding: 15px;
+  width: 300px;
+  background-color: #f2f2f2;
+  box-shadow: 5px 5px 5px 5px rgba(220, 224, 221, 0.75);
+}
+
+img {
+  width: 300px;
+}
+h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+p {
+  width: 300px;
+}
