@@ -1,65 +1,124 @@
 <html lang="fr">
     <head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="styles.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/sass/styles.css">
+    <link rel="stylesheet" href="/styles/sass/collapsible.css">
+    <link rel="stylesheet" href="/styles/sass/projects.css">
 		<title>DkP - Projets</title>
     </head>
-	<body>
-			<header>
-        <div class="box">
-          <a href="https://dkp-consult.be"><div id="logo"><img src="https://dkp-consult.be/images/logov0-site.png" alt="header"></div></a>
-          <div class="menu-navigation">
-
-            <a href="https://dkp-consult.be/pages/blog-resume.html"><button class="btn btn-1"><span>Blog</span></button></a>
-
-            <a href="https://dkp-consult.be/pages/cv.html"><button class="btn btn-1"><span>CV</span></button></a>
-
-            <a href="https://dkp-consult.be/pages/services.html"><button class="btn btn-1"><span>Services</span></button></a>
-
-            <a href="https://dkp-consult.github.io/exercices/"><button class="btn btn-1"><span>Portfolio</span></button></a>
-
-          </div>
+	
+  
+  <body>
+			
+    <main class="mobile">
+      <header>
+        <div class="name"><a href="../index.html">dkp</a></div>
+        <div class="burger">
+          <div id="mySidenav" class="sidenav">
+            <a href="#" class="close" id="closeBtn">x</a>
+            <ul>
+          <li><div class="name-navbar"><a href="../index.html">dkp</a></div></li>
+          <li><div class="hello"><a href="../index.html">_hello</a></div></li>
+          <li><div class="about-me"><a href="pages/about-me.html">_about-me</a></div></li>
+          <li><div class="projects"><a href="pages/projects.html">_projects</a></div></li>
+          <li><div class="contact-me"><a href="mailto:contact@dkp-consult.be">_touch-me</a></div></li>
+              </ul>
+          <ul>
+            <li >
+              <div class="footer-navbar">
+                <div class="left">
+                  <p>find me in:</p>
+                </div>
+                <div class="right">
+                  <div class="twitter"><a href="https://twitter.com/dkp_consult"></a></div>
+                  <div class="github"><a href="https://github.com/dkp-consult"></a></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      
+          <a href="#" id="openBtn">
+            <span class="burger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </a>  
+        </div>
+        
       </header>
-<section id="main">
-			<section>
-        <h1>GitHub Page for different projects and exercises</h1>
-      </section>
+      
+      <div class="work-in-progress"><p>Hello all, actually working on this section. But you can watch my work, I'll update this pages soon. You can find preview of all projects.</p></div>
 
-      <section class="project-list">
-      <ul>
-	         <li class="project-source">Projet Perso</li>
-	      <ul>
-            <a href="https://dkp-consult.be"><li><span class="folder">📁</span>Site web - V3</a><span class="description"> - Version actuelle, en amélioration permanente</span></li>
-            <a href="https://dkp-consult.github.io/exercices/decompte-empty/"><li><span class="folder">📁</span>Calendrier décompte JS</a><span class="description"> - Décompte surprise 1 case = 1 jour pour ma compagne.</span></li>
-            <a href="https://dkp-consult.github.io/exercices/blogv2/"><li><span class="folder">📁</span>Site web - V2</a><span class="description"> - Version actuelle, en amélioration permanente</span></li>
-		        <a href="../exercices/blogdkpconsult/"><li><span class="folder">📁</span>Premier site web</a><span class="description"> - Première mouture, après 1 mois d'apprentisage</span></li>
-	      </ul>
-	         <li class="project-source">Youtube</li>
-	      <ul>
-		       <a href="https://dkp-consult.github.io/exercices/graven-nature-emoi/"><li><span class="folder">📁</span>Graven</a><span class="description"> - Intégration d'une maquette trouvée sur la chaîne de <a href="https://www.youtube.com/c/Gravenilvectuto">Graven</a></span></li>
-	      </ul>
-	         <li class="project-source">Frontend Mentor</li>
-		    <ul>
-			     <a href="https://dkp-consult.github.io/exercices/frontendmentor/qr-code-component-main/"><li><span class="folder">📁</span>Réalisation d'un QR code</a><span class="description"> - Projet d'une card avec QR code. <a href="https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H">Ressources</a></span></li>
+      <div class="collapsible-cat">
+        <button class="collapsible">personal-projects</button>
+        <div class="content">
+          <div class="card-mobile">
+            <div class="card-img-mobile one">
+                <div class="card-logo-mobile"></div>
+            </div>
+            <div class="card-bottom-mobile">
+                <div class="card-explain-mobile">
+                    <p>First inspiration attempt for a responsive website</p>
+                </div>
+                <div class="card-btn-mobile">
+                    <a class="" href="https://dkp-consult.github.io/exercices/blogdkpconsult/">view-project</a>
+                </div>
+            </div>
+          </div>
 
-           <a href="https://dkp-consult.github.io/exercices//frontendmentor/nft-preview-card-component-main/"><li><span class="folder">📁</span>Réalisation NFT Card</a><span class="description"> - Projet d'une card NFT avec :hover <a href="https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U">Ressources</a></span></li>
+          <div class="card-mobile">
+            <div class="card-img-mobile two">
+                <div class="card-logo-mobile"></div>
+            </div>
+            <div class="card-bottom-mobile">
+                <div class="card-explain-mobile">
+                    <p>Second attempt for a responsive website</p>
+                </div>
+                <div class="card-btn-mobile">
+                    <a class="" href="https://dkp-consult.github.io/exercices/blogv2/">view-project</a>
+                </div>
+            </div>
+          </div>
+          
+          <div class="card-mobile">
+            <div class="card-img-mobile three">
+                <div class="card-logo-mobile"></div>
+            </div>
+            <div class="card-bottom-mobile">
+                <div class="card-explain-mobile">
+                    <p>Third attempt for a responsive website</p>
+                </div>
+                <div class="card-btn-mobile">
+                    <a class="" href="https://dkp-consult.github.io/exercices/blogv2/">view-project</a>
+                </div>
+            </div>
 
-		    </ul>
-          <li class="project-source">Codepen</li>
-        <ul>
-          <a href="https://dkp-consult.github.io/exercices/codepen/list-styles/"><li><span class="folder">📁</span>Codepen</a><span class="description"> - Mise en forme d'une Todo list proposée sur <a href="https://codepen.io/">Codepen</a></span></li>
-        </ul>
-      </ul>
-      </section>
-</section>
-
-      <footer>
-        <p>Copyright DkP</p>
-        <p><a href="https://twitter.com/DkP_Consult">Twitter</a></p>
-        <p><a href="mailto:contact@dkp-consult.be">Contact</a></p>
-      </footer>
-
-</body>
+        </div>
+        </div>
+        <button class="collapsible">profesional-projects</button>
+        <div class="content"></div>
+        <button class="collapsible">learning-projects</button>
+        <div class="content"></div>
+        
+      </div>
+      <div class="footer-navbar-about">
+        <div class="left-about">
+          <p>find me in:</p>
+        </div>
+        <div class="right-about">
+          <div class="twitter-about"></div>
+          <div class="github-about"></div>
+        </div>
+      </div>
+    </main>
+    <div class="blurs-background"></div>
+  
+    </body>
+    <script type="text/javascript" src="/scripts/burger.js"></script>
+    <script type="text/javascript" src="/scripts/collapsible.js"></script>
+  </body>
 </html>

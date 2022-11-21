@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Fira";
+  src: url("../../fonts/FiraCode-Regular.ttf") format("truetype");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: red;
+}
+
+.header a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.header {
+  height: 60px;
+  width: 100vw;
+  border-bottom: 1px solid #1E2D3D;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 60px;
+}
+
+.name {
+  padding-right: 150px;
+  padding-left: 100px;
+}
+
+.hello {
+  border-left: 1px solid #1E2D3D;
+  border-right: 1px solid #1E2D3D;
+  padding: 0 30px;
+}
+
+.about-me {
+  border-right: 1px solid #1E2D3D;
+  padding: 0 30px;
+}
+
+.projects {
+  border-right: 1px solid #1E2D3D;
+  padding: 0 30px;
+}
+
+.contact-me {
+  border-left: 1px solid #1E2D3D;
+  padding: 0 30px;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+}
+
+.space-content {
+  width: 100%;
+  height: 200px;
+}
+
+/* foooter */
+.footer a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid #1E2D3D;
+  color: #FFFFFF;
+  line-height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.find-me {
+  padding-right: 75px;
+  padding-left: 75px;
+}
+
+.twitter {
+  border-left: 1px solid #1E2D3D;
+  border-right: 1px solid #1E2D3D;
+  height: 49px;
+  width: 52px;
+  background-image: url(../../images/icons/twitter.svg);
+  opacity: 0.3;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+}
+
+.github {
+  border-left: 1px solid #1E2D3D;
+  padding-left: 30px;
+}
+
+.github-logo {
+  height: 49px;
+  width: 52px;
+  background-image: url(../../images/icons/github.svg);
+  opacity: 0.3;
+}/*# sourceMappingURL=header.css.map */
