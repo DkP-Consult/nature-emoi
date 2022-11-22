@@ -57,140 +57,6 @@ body {
   overflow: hidden;
 }
 
-.sidenav {
-  width: 96vw;
-  height: calc(100% - 30px);
-  position: fixed;
-  border: solid 1px #1E2D3D;
-  border-radius: 8px;
-  z-index: 10;
-  top: 0;
-  left: -150vw;
-  background-color: #011627;
-  margin-top: 15px;
-  margin-bottom: 100px;
-  transition: left 0.5s ease;
-}
-
-.sidenav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #FFFFFF;
-  display: block;
-  transition: 0.3s;
-  height: 100px;
-  border-bottom: 1px solid #1E2D3D;
-  line-height: 100px;
-}
-
-.sidenav a:hover {
-  color: #607B96;
-}
-
-.sidenav.active {
-  left: 0;
-  width: 96vw;
-  margin-left: 2vw;
-  margin-top: 2vh;
-  height: calc(100% - 30px);
-  border: solid 1px #1E2D3D;
-  border-radius: 8px;
-}
-
-.sidenav .close {
-  position: absolute;
-  top: -30px;
-  right: 10px;
-  font-size: 36px;
-  border-bottom: none;
-}
-
-.burger-icon span {
-  display: block;
-  width: 20px;
-  height: 3px;
-  background-color: #607B96;
-  margin: 6px 0;
-}
-
-.burger {
-  padding-right: 18px;
-  padding-top: 10px;
-}
-
-.name-navbar, .hello, .about-me, .projects, .contact-me {
-  height: 100px;
-  line-height: 100px;
-}
-
-.name-navbar a, .hello a, .about-me a, .projects a, .contact-me a {
-  padding-left: 60px;
-  height: 100px;
-  line-height: 100px;
-}
-
-.footer-navbar {
-  border-radius: 8px;
-  border-top: 1px solid #1E2D3D;
-  height: 75px;
-  width: 100%;
-  display: block;
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  text-decoration: none;
-  font-size: 25px;
-  color: #FFFFFF;
-}
-
-.twitter {
-  border-left: 1px solid #1E2D3D;
-  border-right: 1px solid #1E2D3D;
-  height: 75px;
-  width: 75px;
-  background-image: url(../../images/icons/twitter.svg);
-  background-size: cover;
-  opacity: 0.3;
-  padding-left: 30px;
-  transition: opacity 1s ease;
-}
-.twitter:hover {
-  opacity: 0.9;
-}
-
-.github {
-  height: 75px;
-  width: 75px;
-  background-image: url(../../images/icons/github.svg);
-  opacity: 0.3;
-  background-size: cover;
-  transition: opacity 1s ease;
-}
-.github:hover {
-  opacity: 0.9;
-}
-
-.right {
-  display: flex;
-  flex-direction: row;
-}
-
-.left {
-  line-height: 75px;
-  padding-left: 60px;
-}
-
 .footer-navbar-about {
   border-radius: 8px;
   border-top: 1px solid #1E2D3D;
@@ -272,64 +138,13 @@ body {
   background: linear-gradient(90deg, rgba(67,217,173,1) 10%, rgba(75,114,200,1) 50%, rgba(67,217,173,1) 90%); 
   filter: blur(150px); */
   /* background-image: linear-gradient(90deg,
-       hsl(162deg 66% 56%) 0%,
-       hsl(207deg 100% 45%) 29%,
-       hsl(191deg 100% 43%) 43%,
-       hsl(191deg 100% 43%) 57%,
-       hsl(207deg 100% 45%) 71%,
-       hsl(162deg 66% 56%) 100%);
-   filter:blur(75px); */
-}
-
-.hello-all {
-  color: #FFFFFF;
-  font-size: 18px;
-  position: absolute;
-  top: 162px;
-  left: 27px;
-}
-
-.dkp-consult {
-  color: #FFFFFF;
-  font-size: 62px;
-  position: relative;
-  top: 108px;
-  left: 50px;
-  width: 80vw;
-  padding-bottom: 5px;
-}
-
-.underline-letter {
-  border-bottom: solid 4px #E99287;
-}
-
-.babydev {
-  color: #43D9AD;
-  font-size: 20px;
-  position: relative;
-  top: 120px;
-  left: 80px;
-  width: 300px;
-}
-
-.find-me {
-  color: #607B96;
-  font-size: 14px;
-  position: relative;
-  top: 400px;
-  left: 35px;
-  width: 80vw;
-}
-
-.find-me-code {
-  color: #4D5BCE;
-  position: relative;
-  left: 50px;
-}
-
-.find-me-code a {
-  color: #E99287;
-  text-decoration: none;
+      hsl(162deg 66% 56%) 0%,
+      hsl(207deg 100% 45%) 29%,
+      hsl(191deg 100% 43%) 43%,
+      hsl(191deg 100% 43%) 57%,
+      hsl(207deg 100% 45%) 71%,
+      hsl(162deg 66% 56%) 100%);
+  filter:blur(75px); */
 }
 
 .work-in-progress {
@@ -390,15 +205,6 @@ body {
   background-image: url(../../images/preview-pics/codepen-preview.png);
 }
 
-.card-logo-mobile {
-  width: 28px;
-  height: 28px;
-  background-image: url(../../images/icons/css.svg);
-  position: relative;
-  top: 19px;
-  left: 245px;
-}
-
 .card-explain-mobile p {
   font-family: "Fira";
   color: #607B96;
@@ -430,6 +236,67 @@ body {
 
 .card-btn-mobile:hover {
   background-color: #FEA55F;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  z-index: 1;
+  line-height: 31px;
+  position: relative;
+  padding-left: 30px;
+  font-size: 16px;
+  color: #FFFFFF;
+  height: 31px;
+  background-color: rgba(16, 31, 47, 0.5);
+  margin-top: 10px;
+}
+
+.active-collapsible,
+.collapsible:hover {
+  background-color: #1E2D3D;
+}
+
+.active-collabsible + .content {
+  padding: 18px;
+}
+
+.content {
+  padding: 0px 18px;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+  font-size: 16px;
+  color: #FFFFFF;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.collapsible::before {
+  background-image: url(../../images/icons/Vector.svg);
+  height: 20px;
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  content: "";
+  background-size: cover;
+  width: 13px;
+}
+
+.collapsible-cat {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 900px) {
