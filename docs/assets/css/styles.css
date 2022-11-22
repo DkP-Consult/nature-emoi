@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Fira";
-  src: url("docs/assets/fonts/FiraCode-Regular.ttf") format("truetype");
+  src: url("../fonts/FiraCode-Regular.ttf") format("truetype");
 }
 header {
   border-bottom: 1px solid #1E2D3D;
