@@ -1,6 +1,6 @@
 Hello,
-Welcome on my public Git repository.
-In this repository, i'll push exercices & personnal projects.
+Welcome on my public execices repository.
+In this repository, I'll push exercices & personnal projects.
 
 Fell free to comment, review code and explain somes mistakes. I'm here for learning.
 

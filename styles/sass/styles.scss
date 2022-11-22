@@ -161,9 +161,10 @@ body {
 .footer-navbar-about{
     border-radius: 8px;
     border-top: 1px solid #1E2D3D;
+    border-bottom: 1px solid #1E2D3D;
     width: calc(98vw - 30px);
     display: block;
-    position: absolute;
+    position: relative;
     bottom: 0;
     display: flex;
     flex-direction: row;
@@ -171,7 +172,6 @@ body {
     text-decoration: none;
     font-size: 25px;
     color: $secondaryColorFour;
-    margin-top: 64vh;
 }
 .twitter-about {
     border-left: 1px solid $linesColor;
@@ -295,6 +295,7 @@ body {
     border-radius: 15px;
     background-color: #011221;
     margin-left: 10px;
+    margin-bottom: 10px;
   }
   
   .card-img-mobile {
@@ -318,6 +319,16 @@ body {
 
   .calendar {
     background-image: url(../../images/preview-pics/calendrier-js.png);
+  }
+
+  .graven {
+    background-image: url(../../images/preview-pics/graven-integration.png);
+  }
+  .frontend-mentor {
+    background-image: url(../../images/preview-pics/frontend-mento.png);
+  }
+  .codepen {
+    background-image: url(../../images/preview-pics/codepen-preview.png);
   }
   
   .card-logo-mobile {

@@ -31,7 +31,7 @@
 }
 
 .content {
-  padding: 0 18px;
+  padding: 0px 18px;
   max-height: 0;
   transition: max-height 0.2s ease-out;
   z-index: 1;
@@ -42,6 +42,7 @@
   margin-top: 10px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .collapsible::before {
@@ -57,5 +58,6 @@
 
 .collapsible-cat {
   padding-top: 15px;
-  max-height: 200vh;
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=collapsible.css.map */
