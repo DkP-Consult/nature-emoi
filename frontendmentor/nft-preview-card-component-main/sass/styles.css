@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap");
 @font-face {
-  font-family: 'Outfit';
+  font-family: "Outfit";
   font-style: normal;
   font-weight: 300, 400, 600;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/outfit/v5/QGYyz_MVcBeNP4NjuGObqx1XmO1I4TC1O4a0Ew.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
 .attribution {
   width: 100%;
   position: fixed;
@@ -15,16 +14,16 @@
 }
 
 body {
-  background-color: #0d192b;
+  background-color: hsl(217deg, 54%, 11%);
   font-size: 17px;
-  font-family: 'Outfit', 'sans serif';
+  font-family: "Outfit", "sans serif";
   font-weight: 300;
 }
 
 .card {
   width: 323px;
   height: 542px;
-  background-color: #14253d;
+  background-color: hsl(216deg, 50%, 16%);
   margin-left: auto;
   margin-right: auto;
   margin-top: 200px;
@@ -42,7 +41,7 @@ body {
 }
 
 .picture-active {
-  background-color: rgba(0, 255, 247, 0);
+  background-color: hsla(178deg, 100%, 50%, 0);
   width: 280px;
   height: 280px;
   top: 20px;
@@ -53,9 +52,8 @@ body {
   transition: background-color 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
 }
-
 .picture-active:hover {
-  background-color: rgba(0, 255, 247, 0.5);
+  background-color: hsla(178deg, 100%, 50%, 0.5);
   opacity: 1;
   cursor: pointer;
 }
@@ -68,19 +66,18 @@ body {
 }
 
 h2 {
-  color: white;
+  color: hsl(0deg, 0%, 100%);
   font-weight: 600;
   font-size: 22px;
   margin-left: 25px;
   margin-top: 20px;
 }
-
 h2:hover {
   cursor: pointer;
 }
 
 .description {
-  color: #8bacda;
+  color: hsl(215deg, 51%, 70%);
   margin-left: 25px;
   width: 300px;
 }
@@ -92,14 +89,13 @@ h2:hover {
   margin-right: 25px;
   margin-top: -13px;
   font-weight: 300;
-  color: #8bacda;
-  border-bottom: 1px solid #2f415b;
+  color: hsl(215deg, 51%, 70%);
+  border-bottom: 1px solid hsl(215deg, 32%, 27%);
 }
 
 .eth-number {
   font-weight: 600;
 }
-
 .eth-number img {
   vertical-align: middle;
 }
@@ -109,7 +105,7 @@ h2:hover {
 }
 
 .creator {
-  color: #8bacda;
+  color: hsl(215deg, 51%, 70%);
   margin-left: 25px;
   margin-bottom: 60px;
   display: inline-flex;
@@ -120,7 +116,7 @@ h2:hover {
 .creator img {
   width: 35px;
   height: 35px;
-  border: solid 1px white;
+  border: solid 1px hsl(0deg, 0%, 100%);
   border-radius: 100%;
   vertical-align: middle;
   margin-right: 15px;
@@ -129,10 +125,9 @@ h2:hover {
 .creator a {
   text-decoration: none;
   margin-left: 5px;
-  color: #8bacda;
+  color: hsl(215deg, 51%, 70%);
 }
-
 .creator a:hover {
-  color: #00fff7;
+  color: hsl(178deg, 100%, 50%);
   cursor: pointer;
-}
+}/*# sourceMappingURL=styles.css.map */

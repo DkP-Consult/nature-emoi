@@ -1,0 +1,311 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Fira, Consolas;
+  touch-action: none;
+}
+
+@font-face {
+  font-family: "Fira";
+  src: url("../../fonts/FiraCode-Regular.ttf") format("truetype");
+}
+header {
+  border-bottom: 1px solid #1E2D3D;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  background-color: #010C15;
+}
+
+.name a {
+  color: #607B96;
+  text-decoration: none;
+  line-height: 56px;
+  padding-left: 18px;
+}
+
+.website {
+  border-left: 1px solid #1E2D3D;
+  border-right: 1px solid #1E2D3D;
+  height: 56px;
+  width: 82px;
+  background-image: url(../../images/icons/home-fill.svg);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+  padding-left: 30px;
+  transition: opacity 1s ease;
+}
+.website:hover {
+  opacity: 0.9;
+}
+
+.mobile {
+  width: 96vw;
+  min-height: calc(100% - 30px);
+  border: solid 1px #1E2D3D;
+  border-radius: 8px;
+  background-color: #011627;
+  position: absolute;
+  margin-left: 2vw;
+  margin-top: 2vh;
+  overflow: hidden;
+}
+
+.footer-navbar-about {
+  border-radius: 8px;
+  border-top: 1px solid #1E2D3D;
+  border-bottom: 1px solid #1E2D3D;
+  width: calc(98vw - 30px);
+  display: block;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+  font-size: 25px;
+  color: #FFFFFF;
+}
+
+.twitter-about {
+  border-left: 1px solid #1E2D3D;
+  border-right: 1px solid #1E2D3D;
+  height: 82px;
+  width: 82px;
+  background-image: url(../../images/icons/twitter.svg);
+  background-size: cover;
+  opacity: 0.3;
+  padding-left: 30px;
+  transition: opacity 1s ease;
+}
+.twitter-about:hover {
+  opacity: 0.9;
+}
+
+.github-about {
+  height: 82px;
+  width: 82px;
+  background-image: url(../../images/icons/github.svg);
+  opacity: 0.3;
+  background-size: cover;
+  transition: opacity 1s ease;
+}
+.github-about:hover {
+  opacity: 0.9;
+}
+
+.mail-about {
+  border-left: 1px solid #1E2D3D;
+  height: 82px;
+  width: 82px;
+  background-image: url(../../images/icons/Frame.svg);
+  opacity: 0.3;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: opacity 1s ease;
+}
+.mail-about:hover {
+  opacity: 0.9;
+}
+
+.right-about {
+  display: flex;
+  flex-direction: row;
+  padding-right: 0.5vw;
+}
+
+.left-about {
+  line-height: 75px;
+  padding-left: 60px;
+}
+
+.blurs-background {
+  width: 300px;
+  height: 418px;
+  position: absolute;
+  top: 154px;
+  background: rgb(67, 217, 173);
+  background: radial-gradient(circle, rgb(67, 217, 173) 0%, rgb(69, 189, 180) 10%, rgb(71, 164, 187) 20%, rgb(74, 131, 196) 30%, rgb(67, 217, 173) 40%, rgb(67, 217, 173) 50%, rgb(75, 114, 200) 60%, rgb(67, 217, 173) 70%, rgb(72, 157, 188) 80%, rgb(70, 182, 182) 90%, rgb(67, 217, 173) 100%);
+  filter: blur(155px);
+  /* background: rgb(67,217,173);
+  background: linear-gradient(90deg, rgba(67,217,173,1) 10%, rgba(75,114,200,1) 50%, rgba(67,217,173,1) 90%); 
+  filter: blur(150px); */
+  /* background-image: linear-gradient(90deg,
+      hsl(162deg 66% 56%) 0%,
+      hsl(207deg 100% 45%) 29%,
+      hsl(191deg 100% 43%) 43%,
+      hsl(191deg 100% 43%) 57%,
+      hsl(207deg 100% 45%) 71%,
+      hsl(162deg 66% 56%) 100%);
+  filter:blur(75px); */
+}
+
+.work-in-progress {
+  color: #FFFFFF;
+  padding: 15px;
+}
+.work-in-progress a {
+  text-decoration: none;
+  color: #607B96;
+}
+.work-in-progress a:hover {
+  color: #4D5BCE;
+}
+
+.card-mobile {
+  width: 291px;
+  height: 328px;
+  border-radius: 15px;
+  background-color: #011221;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.card-img-mobile {
+  width: 291;
+  height: 146px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: blue;
+  background-size: cover;
+}
+
+.one {
+  background-image: url(../../images/preview-pics/v1-website.png);
+}
+
+.two {
+  background-image: url(../../images/preview-pics/blog-v02.png);
+}
+
+.three {
+  background-image: url(../../images/preview-pics/blog-v03.png);
+}
+
+.calendar {
+  background-image: url(../../images/preview-pics/calendrier-js.png);
+}
+
+.graven {
+  background-image: url(../../images/preview-pics/graven-integration.png);
+}
+
+.frontend-mentor {
+  background-image: url(../../images/preview-pics/frontend-mento.png);
+}
+
+.codepen {
+  background-image: url(../../images/preview-pics/codepen-preview.png);
+}
+
+.card-explain-mobile p {
+  font-family: "Fira";
+  color: #607B96;
+  font-size: 18px;
+  margin-left: 31px;
+  margin-right: 31px;
+  margin-top: 25px;
+}
+
+.card-btn-mobile {
+  width: 129px;
+  height: 38px;
+  margin-left: 31px;
+  background-color: #1C2B3A;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: background-color 1s ease;
+}
+
+.card-btn-mobile a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 18px;
+  top: 10px;
+  left: 14px;
+  position: relative;
+}
+
+.card-btn-mobile:hover {
+  background-color: #FEA55F;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  z-index: 1;
+  line-height: 31px;
+  position: relative;
+  padding-left: 30px;
+  font-size: 16px;
+  color: #FFFFFF;
+  height: 31px;
+  background-color: rgba(16, 31, 47, 0.5);
+  margin-top: 10px;
+}
+
+.active-collapsible,
+.collapsible:hover {
+  background-color: #1E2D3D;
+}
+
+.active-collabsible + .content {
+  padding: 18px;
+}
+
+.content {
+  padding: 0px 18px;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+  font-size: 16px;
+  color: #FFFFFF;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.collapsible::before {
+  background-image: url(../../images/icons/Vector.svg);
+  height: 20px;
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  content: "";
+  background-size: cover;
+  width: 13px;
+}
+
+.collapsible-cat {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 900px) {
+  .left-about {
+    display: none;
+  }
+  .footer-navbar-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}/*# sourceMappingURL=styles.css.map */
