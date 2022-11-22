@@ -25,6 +25,22 @@ body {
     line-height: 56px;
     padding-left: 18px;
 }
+.website {
+    border-left: 1px solid $linesColor;
+    border-right: 1px solid $linesColor;
+    height: 56px;
+    width: 82px;
+    background-image: url(../../images/icons/home-fill.svg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center ;
+    opacity: 0.3;
+    padding-left: 30px;
+    transition: opacity 1s ease;
+    &:hover {
+        opacity: 0.9;
+    }
+}
 .mobile {
     width:calc(98vw - 2vw);
     min-height: calc(100% - 30px);
@@ -193,6 +209,20 @@ body {
     background-image: url(../../images/icons/github.svg);
     opacity: 0.3;
     background-size: cover;
+    transition: opacity 1s ease;
+    &:hover {
+        opacity: 0.9;
+    }
+}
+.mail-about{
+    border-left: 1px solid $linesColor;
+    height: 82px;
+    width: 82px;
+    background-image: url(../../images/icons/Frame.svg);
+    opacity: 0.3;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center ;
     transition: opacity 1s ease;
     &:hover {
         opacity: 0.9;
@@ -372,4 +402,16 @@ body {
   .card-btn-mobile:hover {
     background-color: #FEA55F;
 
+  }
+
+  @media screen and (max-width: 900px) {
+    .left-about {
+        display: none;
+    }
+    .footer-navbar-about {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
   }

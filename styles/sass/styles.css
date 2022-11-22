@@ -28,6 +28,23 @@ body {
   padding-left: 18px;
 }
 
+.website {
+  border-left: 1px solid #1E2D3D;
+  border-right: 1px solid #1E2D3D;
+  height: 56px;
+  width: 82px;
+  background-image: url(../../images/icons/home-fill.svg);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+  padding-left: 30px;
+  transition: opacity 1s ease;
+}
+.website:hover {
+  opacity: 0.9;
+}
+
 .mobile {
   width: 96vw;
   min-height: calc(100% - 30px);
@@ -217,6 +234,21 @@ body {
   opacity: 0.9;
 }
 
+.mail-about {
+  border-left: 1px solid #1E2D3D;
+  height: 82px;
+  width: 82px;
+  background-image: url(../../images/icons/Frame.svg);
+  opacity: 0.3;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: opacity 1s ease;
+}
+.mail-about:hover {
+  opacity: 0.9;
+}
+
 .right-about {
   display: flex;
   flex-direction: row;
@@ -398,4 +430,15 @@ body {
 
 .card-btn-mobile:hover {
   background-color: #FEA55F;
+}
+
+@media screen and (max-width: 900px) {
+  .left-about {
+    display: none;
+  }
+  .footer-navbar-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }/*# sourceMappingURL=styles.css.map */
