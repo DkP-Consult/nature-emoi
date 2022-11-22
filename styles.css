@@ -33,7 +33,7 @@ body {
   border-right: 1px solid #1E2D3D;
   height: 56px;
   width: 82px;
-  background-image: url(../../images/icons/home-fill.svg);
+  background-image: url(home-fill.svg);
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: center;
@@ -78,7 +78,7 @@ body {
   border-right: 1px solid #1E2D3D;
   height: 82px;
   width: 82px;
-  background-image: url(../../images/icons/twitter.svg);
+  background-image: url(twitter.svg);
   background-size: cover;
   opacity: 0.3;
   padding-left: 30px;
@@ -91,7 +91,7 @@ body {
 .github-about {
   height: 82px;
   width: 82px;
-  background-image: url(../../images/icons/github.svg);
+  background-image: url(github.svg);
   opacity: 0.3;
   background-size: cover;
   transition: opacity 1s ease;
@@ -104,7 +104,7 @@ body {
   border-left: 1px solid #1E2D3D;
   height: 82px;
   width: 82px;
-  background-image: url(../../images/icons/Frame.svg);
+  background-image: url(Frame.svg);
   opacity: 0.3;
   background-size: 50%;
   background-repeat: no-repeat;
@@ -178,31 +178,31 @@ body {
 }
 
 .one {
-  background-image: url(../../images/preview-pics/v1-website.png);
+  background-image: url(v1-website.png);
 }
 
 .two {
-  background-image: url(../../images/preview-pics/blog-v02.png);
+  background-image: url(blog-v02.png);
 }
 
 .three {
-  background-image: url(../../images/preview-pics/blog-v03.png);
+  background-image: url(blog-v03.png);
 }
 
 .calendar {
-  background-image: url(../../images/preview-pics/calendrier-js.png);
+  background-image: url(calendrier-js.png);
 }
 
 .graven {
-  background-image: url(../../images/preview-pics/graven-integration.png);
+  background-image: url(graven-integration.png);
 }
 
 .frontend-mentor {
-  background-image: url(../../images/preview-pics/frontend-mento.png);
+  background-image: url(frontend-mento.png);
 }
 
 .codepen {
-  background-image: url(../../images/preview-pics/codepen-preview.png);
+  background-image: url(codepen-preview.png);
 }
 
 .card-explain-mobile p {
@@ -283,7 +283,7 @@ body {
 }
 
 .collapsible::before {
-  background-image: url(../../images/icons/Vector.svg);
+  background-image: url(Vector.svg);
   height: 20px;
   position: absolute;
   top: 7px;
