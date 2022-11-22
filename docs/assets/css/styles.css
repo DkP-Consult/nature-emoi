@@ -3,9 +3,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Fira, Consolas;
-  touch-action: none;
-  overflow: scroll;
-    -webkit-overflow-scrolling: touch;
 }
 
 @font-face {
