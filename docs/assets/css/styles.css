@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: Fira, Consolas;
   touch-action: none;
+  -webkit-overflow-scrolling: touch;
 }
 
 @font-face {
