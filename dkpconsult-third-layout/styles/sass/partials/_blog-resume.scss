@@ -1,0 +1,60 @@
+.name-of-article {
+  border : solid 1px #e0e0eb;
+
+  width: 80%;
+  margin: auto;
+  margin-top: 3em;
+  padding-left: 2em;
+  box-shadow: 7px 7px 5px 0px rgb(0,172,238);
+  border-radius: 25px;
+}
+
+.title {
+/* border : solid 1px black; For design */
+  margin-top : 1em;
+  margin-right : 0em;
+}
+.posit-aut-date {
+  width : 8%;
+  margin-top : -1em;
+  margin-left: em;
+  display : flex;
+  flex-direction: row;
+  justify-content : space-between;
+  /*border : solid 1px black; For design */
+
+}
+.autor {
+  /* border : solid 1px black; For design */
+
+}
+
+.date {
+
+  /*border : solid 1px black; For design */
+  font-style : italic;
+  color: white;
+  padding-left: 1em;
+
+}
+
+.resume {
+  /* border : solid 1px black; For design */
+  margin-top: -2em;
+  display : flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.endofresume {
+  /*border : solid 1px black; For design */
+  color: blue;
+  margin-left: 0.5em;
+}
+
+.link {
+ /* border : solid 1px black; For design */
+  position : absolute;
+  right : 2em;
+  bottom: -1em;
+}

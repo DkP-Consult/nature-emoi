@@ -1,0 +1,30 @@
+.about {
+  display: flex;
+  background-color: $whitesmoke;
+  margin-top: 5vh;
+  border-top-left-radius: 10px 120px;
+  border-top-right-radius: 100px 120px;
+  border-bottom-right-radius: 10px 120px;
+  border-bottom-left-radius: 40px 120px;
+  box-shadow: 3px 3px 4px 1px rgba(255,255,255,0.71); /* Check color */
+}
+.about-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3vw;
+  padding-right: 1vw;
+  padding-bottom: 10px;
+}
+.about-right {
+  padding: 1vh;
+  margin: auto;
+}
+.about-right img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: solid 3px white;
+
+}

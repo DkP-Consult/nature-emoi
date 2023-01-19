@@ -1,0 +1,48 @@
+.table-of-content-left {
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.table-of-content-left h3 {
+  text-decoration: underline;
+}
+
+.article{
+  padding: 1vw;
+  display: flex;
+  flex-direction : column;
+  margin-bottom : 4vh;
+  border : 1px solid black;
+  border-radius: 30px;
+}
+
+.title{
+  font-size: 1rem;
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+  text-decoration: underline;
+}
+.resume {
+  font-size: 0.75rem;
+}
+
+.readmore{
+  position: relative;
+  left: 15vw;
+}
+
+button {
+  width: 4vw;
+  height: 3vh;
+  border: 1px solid #000;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover {
+  box-shadow:
+  7px 7px 20px 0px #fff9,
+  4px 4px 5px 0px #fff9,
+  7px 7px 20px 0px #0002,
+  4px 4px 5px 0px #0001;
+}

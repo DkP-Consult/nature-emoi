@@ -1,0 +1,17 @@
+.banner {
+  width: 100vw;
+  height: 10vh;
+  background-image: url(../../images/banner.png);
+  margin: auto;
+  position: relative;
+}
+.name {
+  font-size: 34px;
+  font-weight: bolder;
+  position : absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: Roboto;
+}
