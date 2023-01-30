@@ -1,0 +1,128 @@
+$primary-dark : hsl(158, 36%, 37%);
+$primary-cream: hsl(30, 38%, 92%);
+$neutral-very-dark-blue : hsl(212, 21%, 14%);
+$neutral-dark-grayish-blue : hsl(228, 12%, 48%);
+$neutral-white: hsl(0, 0%, 100%);
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(/fonts/Montserrat-Bold.ttf) format('truetype');
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+    font-family: 'Montserrat-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(/fonts/Montserrat-Bold.ttf) format('truetype');
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(/fonts/Fraunces_72pt_Soft-Regular.ttf) format('truetype');
+}
+
+body {
+    background-color: $primary-cream;
+    font-family: 'Montserrat-Bold';
+    font-size: 14px;
+}
+
+.card {
+    width: 345px;
+    height: 615px;
+    border-radius: 15px;
+    background-color: $neutral-white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.picture {
+    height: 240px;
+    width: 345px;
+    background-image: url(/images/image-product-mobile.jpg);
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+.content {
+    width: 345px;
+    height: 375px ;
+}
+.content-title {
+    text-transform: uppercase;
+    font-family: Fraunces;
+    width: 100px;
+    height: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: $neutral-dark-grayish-blue;
+    letter-spacing: 5px;
+    font-size: 13px;
+}
+.content-article-name {
+    font-family: 'Montserrat-bold';
+    font-weight: 700;
+    font-size: 30px;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 20px;
+    line-height: 30px;
+}
+.content-article-description {
+    color: $neutral-dark-grayish-blue;
+    margin-left: 20px;
+    margin-top: 20px;
+    word-wrap: break-word;
+    height: 90px;
+    font-size: 14px;
+    font-family: Montserrat;
+    width: 295px;
+    line-height: 20px;
+}
+.content-article-price-section {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 220px;
+    margin-left: 20px;
+}
+.content-article-price {
+    text-decoration: line-through;
+    color: $neutral-dark-grayish-blue;
+    line-height: 14px;
+    text-align: center;
+    margin: auto;
+}
+.content-article-price-reduce {
+    font-size: 30px;
+    font-weight: 700;
+    color: $primary-dark
+}
+.content-article-button {
+    width: 300px;
+    height: 50px;
+    background-color: $primary-dark;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+.content-article-button-text {
+    color: $neutral-white;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+}
+.favicon {
+    padding-right: 10px;
+}
+
+/* OK stop for tonight, i'll do the mobile card witout fix in 1h18 */
