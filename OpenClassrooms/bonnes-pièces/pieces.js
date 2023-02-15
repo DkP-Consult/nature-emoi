@@ -5,10 +5,13 @@ const pieces = await reponse.json();
 for (let i = 0; i < pieces.length; i++) {
 
     const article = pieces[i];
+
     // Récupération de l'élement du DOM qui accueillera les fiches
     const sectionFiches = document.querySelector(".fiches");
+
     // Création d'une balise dédiée à une pièce automobile
     const pieceElement = document.createElement("article");
+
     // on création des balises
     const imageElement = document.createElement("img");
     imageElement.src = pieces[i].image;
@@ -26,11 +29,13 @@ for (let i = 0; i < pieces.length; i++) {
 
     // On rattache la balise article a la section Fiches
     sectionFiches.appendChild(pieceElement);
+
     // On rattache l'image à pieceElement (la balise article)
     pieceElement.appendChild(imageElement);
     pieceElement.appendChild(nomElement);
     pieceElement.appendChild(prixElement);
     pieceElement.appendChild(categorieElement);
+
     //Ajout des éléments au DOM pour l'exercice
     pieceElement.appendChild(descriptionElement);
     pieceElement.appendChild(stockElement);
@@ -69,3 +74,29 @@ boutonDescription.addEventListener("click", function () {
     });
     console.log(piecesFiltrees);
 });
+
+// Projection de données avec map 
+
+const noms = pieces.map(piece => piece.nom);
+for (let i = pieces.length -1; i >= 0; i--) {
+    if(pieces[i].prix > 35) {
+        noms.splice(i, 1)
+    };
+};
+
+// Même fonction pour les prix des pièces inférieurs à 35€
+// Création de la listes de
+
+// Création de la liste des pièces abordables
+const abordablesElements = document.createElement('ul');
+
+// Ajout de chaque nom à la liste
+for(let i = 0; i < noms.length ; i++){
+    const nomElement = document.createElement('li');
+    nomElement.innerText = noms[i];
+    abordablesElements.appendChild(nomElement)
+}
+
+// Ajout de l'en-tête puis de la liste au bloc résultats filtres
+document.querySelector('.abordables')
+    .appendChild(abordablesElements)
