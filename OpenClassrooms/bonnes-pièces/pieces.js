@@ -2,10 +2,10 @@
 const reponse = await fetch("pieces-autos.json");
 const pieces = await reponse.json();
 
+function genererPieces(pieces) {
 for (let i = 0; i < pieces.length; i++) {
 
     const article = pieces[i];
-
     // Récupération de l'élement du DOM qui accueillera les fiches
     const sectionFiches = document.querySelector(".fiches");
 
@@ -39,7 +39,10 @@ for (let i = 0; i < pieces.length; i++) {
     //Ajout des éléments au DOM pour l'exercice
     pieceElement.appendChild(descriptionElement);
     pieceElement.appendChild(stockElement);
+    }
 }
+
+genererPieces(pieces);
 
 const boutonTrier = document.querySelector(".btn-trier");
 boutonTrier.addEventListener("click", function () {
@@ -121,3 +124,13 @@ for (let i = 0; i < piecesDisponible.length; i++) {
 
 document.querySelector('.dispoAvecPrix')
     .appendChild(piecesDispoPrix);
+
+
+const inputPrixMax = document.querySelector("#prix-max");
+inputPrixMax.addEventListener('input', function() {
+    const piecesFiltrees = pieces.filter(function(piece){
+        return piece.prix <= inputPrixMax.value;
+    });
+    document.querySelector(".fiches").innerHTML = '';
+    genererPieces(piecesFiltrees);
+})
