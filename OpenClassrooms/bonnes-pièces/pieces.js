@@ -84,9 +84,6 @@ for (let i = pieces.length -1; i >= 0; i--) {
     };
 };
 
-// Même fonction pour les prix des pièces inférieurs à 35€
-// Création de la listes de
-
 // Création de la liste des pièces abordables
 const abordablesElements = document.createElement('ul');
 
@@ -100,3 +97,27 @@ for(let i = 0; i < noms.length ; i++){
 // Ajout de l'en-tête puis de la liste au bloc résultats filtres
 document.querySelector('.abordables')
     .appendChild(abordablesElements)
+
+// Ajout élément dispo + prix
+
+const piecesDisponible = pieces.map(piece => piece.nom);
+const piecesPrice = pieces.map(piece => piece.prix);
+
+for (let i = pieces.length -1; i >= 0; i--) {
+    if (pieces[i].disponibilite === false) {
+        piecesDisponible.splice (i, 1);
+        piecesPrice.splice (i, 1);
+    };
+};
+
+// Création de la liste des pièces dispo 
+const piecesDispoPrix = document.createElement('ul');
+
+for (let i = 0; i < piecesDisponible.length; i++) {
+    const nomElement = document.createElement('li');
+    nomElement.innerText = `${piecesDisponible[i]} - ${piecesPrice[i]} €`;
+    piecesDispoPrix.appendChild(nomElement);
+}
+
+document.querySelector('.dispoAvecPrix')
+    .appendChild(piecesDispoPrix);
