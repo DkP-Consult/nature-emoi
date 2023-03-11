@@ -1,5 +1,5 @@
 let count = 0;
-const value = document.querySelector("#value");
+const value = document.getElementById('value');
 const btns = document.querySelectorAll(".btn");
 
 btns.forEach(function (btn) {
@@ -9,7 +9,6 @@ btns.forEach(function (btn) {
       count--;
     } else if (styles.contains("increase")) {
       count++;
-      console.log("Added");
     } else {
       count = 0;
     }
@@ -32,6 +31,8 @@ btns.forEach(function (btn) {
     value.textContent = count;
   });
 });
+
+console.log(btns)
 
 /* const decrease = document.getElementById("decrease");
 const reset = document.getElementById("reset");
