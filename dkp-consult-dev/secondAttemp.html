@@ -23,7 +23,9 @@
   </style>
   <body>
     <!-- Navbar sticky -->
-    <nav class="bg-gray-800 fixed w-full z-10">
+    <!--initial nav bar without responsive
+      
+      <nav class="bg-gray-800 fixed w-full z-10">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
           <div class="flex items-center">
@@ -50,6 +52,41 @@
           </div>
         </div>
       </div>
+    </nav> -->
+    
+    <nav class="bg-gray-800 fixed w-full z-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center">
+            <div class="flex-shrink-0">
+              <a href="#" class="text-white font-bold text-xl">DKP-Consult</a>
+            </div>
+          </div>
+          <div class="hidden md:block">
+            <a href="#services" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</a>
+          </div>
+          <div class="hidden md:block">
+            <a href="#services" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</a>
+          </div>
+          
+          <div class="block md:hidden">
+            <button type="button" class="text-gray-500 hover:text-white focus:outline-none focus:text-white" aria-label="Menu" onclick="toggleMenu()">
+              <i class="fa fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="md:hidden" id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a href="#services" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
+        </div>
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a href="#services" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
+        </div>
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a href="#services" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
+        </div>
+      </div>
     </nav>
 
     <!-- Hero banner -->
@@ -72,7 +109,7 @@
 
     <!-- Section avec trois cards -->
     <section
-      class="max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8 h-screen"
+      class="max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8 min-h-screen"
       id="services"
     >
       <h2 class="text-4xl font-bold text-gray-800 mb-8">Nos services</h2>
@@ -133,14 +170,14 @@
     </section>
 
     <!-- Section Domaines d'activités -->
-    <section class="bg-gray-100 py-20 h-screen" id="domaines">
+    <section class="bg-gray-100 py-20 min-h-screen relative" id="domaines">
       <div class="container mx-auto flex flex-wrap pt-4 pb-12">
         <!-- Image -->
-        <div class="w-full md:w-1/2 xl:w-1/2">
+        <div class="w-full md:w-1/2 xl:w-1/2 px-4">
           <img
             src="https://picsum.photos/500/304"
             alt="Image domaine"
-            class="w-full object-cover object-center rounded-lg shadow-md"
+            class="w-full object-cover object-center rounded-lg shadow-md h-full"
           />
         </div>
         <!-- Texte -->
@@ -304,5 +341,17 @@
         </div>
       </div>
     </footer>
+
+    <!-- scripts section -->
+    <script>
+        function toggleMenu() {
+    var menu = document.getElementById("mobile-menu");
+    if (menu.style.display === "block") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "block";
+    }
+  }
+    </script>
   </body>
 </html>
