@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DKP-Consult</title>
+    <!-- Ajoutez les liens vers les fichiers CSS de Tailwind -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar sticky -->
+    <nav class="bg-gray-800 fixed w-full z-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center">
+            <div class="flex-shrink-0">
+              <a href="#" class="text-white font-bold text-xl">DKP-Consult</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero banner -->
+    <section
+      class="hero-banner bg-cover bg-center h-screen flex items-center justify-center"
+    >
+      <div class="text-center">
+        <h1 class="text-5xl font-bold text-white">DKP-Consult</h1>
+        <p class="text-xl text-white mt-4">
+          Développeur front-end, intégrateur et conseiller en informatique et
+          finance personnelle
+        </p>
+        <button
+          class="bg-white text-gray-800 px-8 py-3 rounded-full font-bold mt-8"
+        >
+          Call to action
+        </button>
+      </div>
+    </section>
+
+    <!-- Section avec trois cards -->
+    <section class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="https://picsum.photos/500/300"
+            alt="Card image"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Card 1</h3>
+            <p class="text-gray-700 leading-tight">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="https://picsum.photos/500/301"
+            alt="Card image"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Card 2</h3>
+            <p class="text-gray-700 leading-tight">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="https://picsum.photos/500/302"
+            alt="Card image"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Card 3</h3>
+            <p class="text-gray-700 leading-tight">Lorem ipsum dolor sit</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section pour le contact par mail -->
+    <section class="bg-gray-100 py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-3xl font-bold">Contactez-nous</h2>
+          <p class="mt-4 text-gray-600">
+            Nous sommes toujours prêts à répondre à vos questions et à discuter
+            de vos projets.
+          </p>
+        </div>
+        <div class="mt-10 max-w-3xl mx-auto">
+          <form
+            action="#"
+            method="POST"
+            class="grid grid-cols-1 sm:grid-cols-2 gap-6"
+          >
+            <div>
+              <label for="name" class="block text-gray-700 font-bold mb-2"
+                >Nom complet</label
+              >
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Votre nom complet"
+                class="w-full border border-gray-400 p-2 rounded-md"
+              />
+            </div>
+            <div>
+              <label for="email" class="block text-gray-700 font-bold mb-2"
+                >Adresse e-mail</label
+              >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Votre adresse e-mail"
+                class="w-full border border-gray-400 p-2 rounded-md"
+              />
+            </div>
+            <div class="sm:col-span-2">
+              <label for="subject" class="block text-gray-700 font-bold mb-2"
+                >Objet</label
+              >
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="L'objet de votre message"
+                class="w-full border border-gray-400 p-2 rounded-md"
+              />
+            </div>
+            <div class="sm:col-span-2">
+              <label for="message" class="block text-gray-700 font-bold mb-2"
+                >Message</label
+              >
+              <textarea
+                name="message"
+                id="message"
+                rows="4"
+                placeholder="Votre message"
+                class="w-full border border-gray-400 p-2 rounded-md"
+              ></textarea>
+            </div>
+            <div class="sm:col-span-2 text-right">
+              <button
+                type="submit"
+                class="bg-gray-800 text-white px-6 py-3 rounded-md hover:bg-gray-700 font-bold"
+              >
+                Envoyer
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 pt-10 sm:mt-10 pt-10">
+      <div class="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-left">
+        <!-- Col-1 -->
+        <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
+          <!-- Col Titre -->
+          <div class="text-xs uppercase text-gray-400 font-medium mb-6">
+            À propos de nous
+          </div>
+
+          <!-- Liens -->
+          <a class="my-3 block" href="/#">Intégrateur</a>
+          <a class="my-3 block" href="/#">Développeur front-end</a>
+          <a class="my-3 block" href="/#">Conseils en informatique</a>
+          <a class="my-3 block" href="/#">Conseils en finance personnelle</a>
+        </div>
+
+        <!-- Col-2 -->
+        <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
+          <!-- Col Titre -->
+          <div class="text-xs uppercase text-gray-400 font-medium mb-6">
+            Liens utiles
+          </div>
+
+          <!-- Liens -->
+          <a class="my-3 block" href="/#">CGV</a>
+          <a class="my-3 block" href="/#">Mentions légales</a>
+          <a class="my-3 block" href="/#">Politique de confidentialité</a>
+          <a class="my-3 block" href="/#">Cookies</a>
+        </div>
+
+        <!-- Col-3 -->
+        <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
+          <!-- Col Titre -->
+          <div class="text-xs uppercase text-gray-400 font-medium mb-6">
+            Contactez-nous
+          </div>
+
+          <!-- Liens -->
+          <div class="my-3 block">
+            <span class="text-gray-500">Email:</span> contact@dkp-consult.com
+          </div>
+        </div>
+        <!-- Col-4 -->
+        <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
+          <!-- Col Titre -->
+          <div class="text-xs uppercase text-gray-400 font-medium mb-6">
+            Suivez-nous
+          </div>
+
+          <!-- Liens réseaux sociaux -->
+          <div class="flex">
+            <a class="hover:text-gray-300 mr-4" href="#">
+              <i class="fab fa-twitter">twitter</i>
+            </a>
+            <a class="hover:text-gray-300 mr-4" href="#">
+              <i class="fab fa-facebook-f">facebook</i>
+            </a>
+            <a class="hover:text-gray-300 mr-4" href="#">
+              <i class="fab fa-github">GitHub</i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
