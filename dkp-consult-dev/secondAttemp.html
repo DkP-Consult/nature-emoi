@@ -14,6 +14,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
   </head>
+  <style>
+    .custom {
+      background-image: url(https://picsum.photos/id/20/3670);
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
   <body>
     <!-- Navbar sticky -->
     <nav class="bg-gray-800 fixed w-full z-10">
@@ -24,30 +31,50 @@
               <a href="#" class="text-white font-bold text-xl">DKP-Consult</a>
             </div>
           </div>
+          <div class="flex">
+            <a
+              href="#services"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              >Nos Services</a
+            >
+            <a
+              href="#domaines"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              >Domaines d'activité</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              >Contact</a
+            >
+          </div>
         </div>
       </div>
     </nav>
 
     <!-- Hero banner -->
     <section
-      class="hero-banner bg-cover bg-center h-screen flex items-center justify-center"
+      class="hero-banner bg-cover bg-center h-screen flex items-center justify-center custom"
     >
       <div class="text-center">
-        <h1 class="text-5xl font-bold text-white">DKP-Consult</h1>
-        <p class="text-xl text-white mt-4">
+        <h1 class="text-5xl text-gray-900 font-bold">DKP-Consult</h1>
+        <p class="text-xl text-gray-700 mt-4">
           Développeur front-end, intégrateur et conseiller en informatique et
           finance personnelle
         </p>
         <button
-          class="bg-white text-gray-800 px-8 py-3 rounded-full font-bold mt-8"
+          class="bg-green-200 text-gray-800 px-8 py-3 rounded-full font-bold mt-8"
         >
-          Call to action
+          <a href="#services">En savoir plus</a>
         </button>
       </div>
     </section>
 
     <!-- Section avec trois cards -->
-    <section class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <section class="max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8 h-screen" id="services">
+      <h2 class="text-4xl font-bold text-gray-800 mb-8">
+        Nos services
+      </h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="bg-white rounded-lg shadow-lg overflow-hidden">
           <img
@@ -83,18 +110,34 @@
           />
           <div class="p-4">
             <h3 class="text-xl font-bold mb-2">Card 3</h3>
+            <p class="text-gray-700 leading-tight">
+              Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Amet enim culpa, aspernatur provident
+              dignissimos tempora.
+            </p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="https://picsum.photos/500/305"
+            alt="Card image"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Card 4</h3>
             <p class="text-gray-700 leading-tight">Lorem ipsum dolor sit</p>
           </div>
         </div>
       </div>
     </section>
+
     <!-- Section Domaines d'activités -->
-    <section class="bg-gray-100 py-8">
+    <section class="bg-gray-100 py-20 h-screen" id="domaines">
       <div class="container mx-auto flex flex-wrap pt-4 pb-12">
         <!-- Image -->
         <div class="w-full md:w-1/2 xl:w-1/2">
           <img
-            src="image-domaine.jpg"
+            src="https://picsum.photos/500/304"
             alt="Image domaine"
             class="w-full object-cover object-center rounded-lg shadow-md"
           />
@@ -117,8 +160,9 @@
         </div>
       </div>
     </section>
+
     <!-- Section pour le contact par mail -->
-    <section class="bg-gray-100 py-12">
+    <section class="py-20 h-screen" id="contact">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl mx-auto text-center">
           <h2 class="text-3xl font-bold">Contactez-nous</h2>
