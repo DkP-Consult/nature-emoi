@@ -66,7 +66,10 @@
             <a href="#services" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</a>
           </div>
           <div class="hidden md:block">
-            <a href="#services" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</a>
+            <a href="#domaines" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Domaines</a>
+          </div>
+          <div class="hidden md:block">
+            <a href="#contact" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
           </div>
           
           <div class="block md:hidden">
@@ -76,15 +79,15 @@
           </div>
         </div>
       </div>
-      <div class="md:hidden" id="mobile-menu">
+      <div class="md:hidden" id="mobile-menu" style="display: none;">
         <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <a href="#services" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
         </div>
         <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <a href="#services" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
+          <a href="#domaines" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Domaines</a>
         </div>
         <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <a href="#services" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
+          <a href="#contact" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact resp</a>
         </div>
       </div>
     </nav>
@@ -352,6 +355,14 @@
       menu.style.display = "block";
     }
   }
+
+  window.addEventListener('resize', function() {
+    if (window.innerWidth > 768) {
+      document.getElementById('mobile-menu').style.display = 'none';
+    } else {
+      document.getElementById('mobile-menu').style.display = 'none';
+    }
+  });
     </script>
   </body>
 </html>
