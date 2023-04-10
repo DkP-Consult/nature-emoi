@@ -7,7 +7,7 @@
     <!-- Ajoutez les liens vers les fichiers CSS de Tailwind -->
     <link
       rel="stylesheet"
-      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
+      href="../dkp-consult-dev/libraries/tailwindcss/test.css"
     />
     <link
       rel="stylesheet"
@@ -22,37 +22,6 @@
     }
   </style>
   <body>
-    <!-- Navbar sticky -->
-    <!--initial nav bar without responsive
-      
-      <nav class="bg-gray-800 fixed w-full z-10">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-16">
-          <div class="flex items-center">
-            <div class="flex-shrink-0">
-              <a href="#" class="text-white font-bold text-xl">DKP-Consult</a>
-            </div>
-          </div>
-          <div class="flex">
-            <a
-              href="#services"
-              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-              >Services</a
-            >
-            <a
-              href="#domaines"
-              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-              >Domaines</a
-            >
-            <a
-              href="#contact"
-              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-              >Contact</a
-            >
-          </div>
-        </div>
-      </div>
-    </nav> -->
     
     <nav class="bg-gray-800 fixed w-full z-10">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -62,16 +31,11 @@
               <a href="#" class="text-white font-bold text-xl">DKP-Consult</a>
             </div>
           </div>
-          <div class="hidden md:block">
+          <div class="hidden md:block space-x-4">
             <a href="#services" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</a>
-          </div>
-          <div class="hidden md:block">
             <a href="#domaines" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Domaines</a>
-          </div>
-          <div class="hidden md:block">
             <a href="#contact" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
           </div>
-          
           <div class="block md:hidden">
             <button type="button" class="text-gray-500 hover:text-white focus:outline-none focus:text-white" aria-label="Menu" onclick="toggleMenu()">
               <i class="fa fa-bars"></i>
@@ -82,31 +46,21 @@
       <div class="md:hidden" id="mobile-menu" style="display: none;">
         <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <a href="#services" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
-        </div>
-        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <a href="#domaines" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Domaines</a>
-        </div>
-        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <a href="#contact" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact resp</a>
         </div>
       </div>
     </nav>
+    
 
     <!-- Hero banner -->
-    <section
-      class="hero-banner bg-cover bg-center h-screen flex items-center justify-center custom"
-    >
+    <section class="hero-banner bg-cover bg-center h-screen flex items-center justify-center custom">
       <div class="text-center">
         <h1 class="text-5xl text-gray-900 font-bold">DKP-Consult</h1>
         <p class="text-xl text-gray-700 mt-4">
-          Développeur front-end, intégrateur et conseiller en informatique et
-          finance personnelle
+          Développeur front-end, intégrateur et conseiller en informatique et finance personnelle
         </p>
-        <button
-          class="bg-green-200 text-gray-800 px-8 py-3 rounded-full font-bold mt-8"
-        >
-          <a href="#services">En savoir plus</a>
-        </button>
+        <a href="#services" class="inline-block bg-green-200 text-gray-800 px-8 py-3 rounded-full font-bold mt-8">En savoir plus</a>
       </div>
     </section>
 
@@ -177,11 +131,7 @@
       <div class="container mx-auto flex flex-wrap pt-4 pb-12">
         <!-- Image -->
         <div class="w-full md:w-1/2 xl:w-1/2 px-4">
-          <img
-            src="https://picsum.photos/500/304"
-            alt="Image domaine"
-            class="w-full object-cover object-center rounded-lg shadow-md h-full"
-          />
+          <img src="https://picsum.photos/500/304" alt="Image domaine" class="w-full object-cover object-center rounded-lg shadow-md h-full" />
         </div>
         <!-- Texte -->
         <div class="w-full md:w-1/2 xl:w-1/2 pt-6 md:pt-0 px-6">
@@ -190,89 +140,48 @@
               Domaines d'activités
             </h2>
             <p class="text-gray-700 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              euismod ante non sapien consectetur, eget tristique ex varius.
-              Maecenas hendrerit metus nec dolor scelerisque, at laoreet lectus
-              sollicitudin. Fusce dapibus, metus quis feugiat viverra, odio
-              augue euismod nulla, eget rhoncus nibh lorem in tortor. Ut
-              lobortis justo enim, vel ultrices est lobortis nec.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod ante non sapien consectetur, eget tristique ex varius. Maecenas hendrerit metus nec dolor scelerisque, at laoreet lectus sollicitudin. Fusce dapibus, metus quis feugiat viverra, odio augue euismod nulla, eget rhoncus nibh lorem in tortor. Ut lobortis justo enim, vel ultrices est lobortis nec.
             </p>
           </div>
         </div>
       </div>
     </section>
+    
 
     <!-- Section pour le contact par mail -->
-    <section class="py-20 h-screen" id="contact">
+    <section class="py-20 h-screen bg-gray-100" id="contact">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl mx-auto text-center">
           <h2 class="text-3xl font-bold">Contactez-nous</h2>
           <p class="mt-4 text-gray-600">
-            Nous sommes toujours prêts à répondre à vos questions et à discuter
-            de vos projets.
+            Nous sommes toujours prêts à répondre à vos questions et à discuter de vos projets.
           </p>
         </div>
         <div class="mt-10 max-w-3xl mx-auto">
-          <form
-            action="#"
-            method="POST"
-            class="grid grid-cols-1 sm:grid-cols-2 gap-6"
-          >
+          <form action="#" method="POST" class="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div>
-              <label for="name" class="block text-gray-700 font-bold mb-2"
-                >Nom complet</label
-              >
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Votre nom complet"
-                class="w-full border border-gray-400 p-2 rounded-md"
-              />
+              <label for="name" class="block text-gray-700 font-bold mb-2">Nom complet</label>
+              <input type="text" name="name" id="name" placeholder="Votre nom complet"
+                class="w-full border border-gray-400 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 focus:border-transparent transition-colors" />
             </div>
             <div>
-              <label for="email" class="block text-gray-700 font-bold mb-2"
-                >Adresse e-mail</label
-              >
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Votre adresse e-mail"
-                class="w-full border border-gray-400 p-2 rounded-md"
-              />
+              <label for="email" class="block text-gray-700 font-bold mb-2">Adresse e-mail</label>
+              <input type="email" name="email" id="email" placeholder="Votre adresse e-mail"
+                class="w-full border border-gray-400 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 focus:border-transparent transition-colors" />
             </div>
             <div class="sm:col-span-2">
-              <label for="subject" class="block text-gray-700 font-bold mb-2"
-                >Objet</label
-              >
-              <input
-                type="text"
-                name="subject"
-                id="subject"
-                placeholder="L'objet de votre message"
-                class="w-full border border-gray-400 p-2 rounded-md"
-              />
+              <label for="subject" class="block text-gray-700 font-bold mb-2">Objet</label>
+              <input type="text" name="subject" id="subject" placeholder="L'objet de votre message"
+                class="w-full border border-gray-400 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 focus:border-transparent transition-colors" />
             </div>
             <div class="sm:col-span-2">
-              <label for="message" class="block text-gray-700 font-bold mb-2"
-                >Message</label
-              >
-              <textarea
-                name="message"
-                id="message"
-                rows="4"
-                placeholder="Votre message"
-                class="w-full border border-gray-400 p-2 rounded-md"
-              ></textarea>
+              <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+              <textarea name="message" id="message" rows="4" placeholder="Votre message"
+                class="w-full border border-gray-400 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 focus:border-transparent transition-colors"></textarea>
             </div>
             <div class="sm:col-span-2 text-right">
-              <button
-                type="submit"
-                class="bg-gray-800 text-white px-6 py-3 rounded-md hover:bg-gray-700 font-bold"
-              >
-                Envoyer
-              </button>
+              <button type="submit"
+                class="bg-gray-800 text-white px-6 py-3 rounded-md hover:bg-gray-700 font-bold transition-colors">Envoyer</button>
             </div>
           </form>
         </div>
@@ -281,67 +190,67 @@
 
     <!-- Footer -->
     <footer class="bg-gray-800 pt-10 sm:mt-10 pt-10">
-      <div class="max-w-6xl m-auto text-gray-200 flex flex-wrap justify-left">
+      <div class="max-w-6xl mx-auto text-gray-200 grid grid-cols-1 md:grid-cols-4 gap-5">
         <!-- Col-1 -->
-        <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
+        <div class="p-5">
           <!-- Col Titre -->
           <div class="text-xs uppercase text-gray-400 font-medium mb-6">
             À propos de nous
           </div>
 
-          <!-- Liens -->
-          <a class="my-3 block" href="/#">Intégrateur</a>
-          <a class="my-3 block" href="/#">Développeur front-end</a>
-          <a class="my-3 block" href="/#">Conseils en informatique</a>
-          <a class="my-3 block" href="/#">Conseils en finance personnelle</a>
-        </div>
+           <!-- Liens -->
+  <a class="my-3 block" href="/#">Intégrateur</a>
+  <a class="my-3 block" href="/#">Développeur front-end</a>
+  <a class="my-3 block" href="/#">Conseils en informatique</a>
+  <a class="my-3 block" href="/#">Conseils en finance personnelle</a>
+</div>
 
-        <!-- Col-2 -->
-        <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
-          <!-- Col Titre -->
-          <div class="text-xs uppercase text-gray-400 font-medium mb-6">
-            Liens utiles
-          </div>
+<!-- Col-2 -->
+<div class="p-5">
+  <!-- Col Titre -->
+  <div class="text-xs uppercase text-gray-400 font-medium mb-6">
+    Liens utiles
+  </div>
 
-          <!-- Liens -->
-          <a class="my-3 block" href="/#">CGV</a>
-          <a class="my-3 block" href="/#">Mentions légales</a>
-          <a class="my-3 block" href="/#">Politique de confidentialité</a>
-          <a class="my-3 block" href="/#">Cookies</a>
-        </div>
+  <!-- Liens -->
+  <a class="my-3 block" href="/#">CGV</a>
+  <a class="my-3 block" href="/#">Mentions légales</a>
+  <a class="my-3 block" href="/#">Politique de confidentialité</a>
+  <a class="my-3 block" href="/#">Cookies</a>
+</div>
 
-        <!-- Col-3 -->
-        <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
-          <!-- Col Titre -->
-          <div class="text-xs uppercase text-gray-400 font-medium mb-6">
-            Contactez-nous
-          </div>
+<!-- Col-3 -->
+<div class="p-5">
+  <!-- Col Titre -->
+  <div class="text-xs uppercase text-gray-400 font-medium mb-6">
+    Contactez-nous
+  </div>
 
-          <!-- Liens -->
-          <div class="my-3 block">
-            <span class="text-gray-500">Email:</span> contact@dkp-consult.com
-          </div>
-        </div>
-        <!-- Col-4 -->
-        <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
-          <!-- Col Titre -->
-          <div class="text-xs uppercase text-gray-400 font-medium mb-6">
-            Suivez-nous
-          </div>
+  <!-- Liens -->
+  <div class="my-3 block">
+    <span class="text-gray-500">Email:</span> contact@dkp-consult.com
+  </div>
+</div>
+<!-- Col-4 -->
+<div class="p-5">
+  <!-- Col Titre -->
+  <div class="text-xs uppercase text-gray-400 font-medium mb-6">
+    Suivez-nous
+  </div>
 
-          <!-- Liens réseaux sociaux -->
-          <div class="flex">
-            <a class="hover:text-gray-300 mr-4" href="#">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a class="hover:text-gray-300 mr-4" href="#">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a class="hover:text-gray-300 mr-4" href="#">
-              <i class="fab fa-github"></i>
-            </a>
-          </div>
-        </div>
+  <!-- Liens réseaux sociaux -->
+  <div class="flex">
+    <a class="hover:text-gray-300 mr-4" href="#">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a class="hover:text-gray-300 mr-4" href="#">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a class="hover:text-gray-300 mr-4" href="#">
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
+</div>
       </div>
     </footer>
 
