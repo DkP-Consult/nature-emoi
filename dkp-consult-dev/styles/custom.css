@@ -3,3 +3,9 @@
     background-size: cover;
     background-position: center;
   }
+
+  .card-btn-position {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
