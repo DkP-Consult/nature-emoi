@@ -20,380 +20,54 @@
 
   <body>
     <!-- navbar -->
-    <nav class="bg-gray-800 fixed w-full z-10">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-16">
-          <div class="flex items-center">
-            <div class="flex-shrink-0">
-              <a href="#" class="text-white font-bold text-xl">dkp-consult</a>
-            </div>
-          </div>
-          <div class="hidden md:block">
-            <a
-              href="#services"
-              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-              >Services</a
-            >
-          </div>
-          <div class="hidden md:block">
-            <a
-              href="#domaines"
-              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-              >Domaines</a
-            >
-          </div>
-          <div class="hidden md:block">
-            <a
-              href="#contact"
-              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-              >Contact</a
-            >
-          </div>
+    <nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6 fixed w-full z-10 top-0">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+          <span class="font-semibold text-xl tracking-tight">Menu</span>
+        </div>
+        <div class="block lg:hidden">
+          <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-white hover:border-white">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+          </button>
+        </div>
+        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 lg:block" id="nav-content">
+          <ul class="list-reset lg:flex justify-end flex-1 items-center">
+            <li class="mr-3">
+              <a class="inline-block py-2 px-4 text-white font-bold no-underline" href="#article-1">Article 1</a>
+            </li>
+            <li class="mr-3">
+              <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#article-2">Article 2</a>
+            </li>
+            <li class="mr-3">
+              <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#article-3">Article 3</a>
+            </li>
+            <li class="mr-3">
+              <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#article-4">Article 4</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
 
-          <div class="block md:hidden">
-            <button
-              type="button"
-              class="text-gray-500 hover:text-white focus:outline-none focus:text-white"
-              aria-label="Menu"
-              onclick="toggleMenu()"
-            >
-              <i class="fa fa-bars"></i>
-            </button>
+    <section class="bg-gray-100 px-4 py-8">
+        <div class="max-w-3xl mx-auto">
+          <h2 class="text-3xl font-bold mb-4">Conditions générales de vente</h2>
+          <div class="prose">
+            <h3 class="text-2xl font-semibold mb-2">Article 1 - Objet</h3>
+            <p class="mb-4">Les présentes conditions régissent les ventes par notre société de tous les produits proposés sur ce site.</p>
+            <h3 class="text-2xl font-semibold mb-2">Article 2 - Prix</h3>
+            <p class="mb-4">Les prix de nos produits sont indiqués en euros toutes taxes comprises (TVA et autres taxes applicables au jour de la commande), sauf indication contraire et hors frais de traitement et d'expédition.</p>
+            <h3 class="text-2xl font-semibold mb-2">Article 3 - Commande</h3>
+            <p class="mb-4">Le client valide sa commande en cliquant sur le bouton "Confirmer la commande" en fin du processus de commande. Il reconnaît ainsi avoir pris connaissance et accepté les présentes conditions générales de vente.</p>
+            <h3 class="text-2xl font-semibold mb-2">Article 4 - Paiement</h3>
+            <p class="mb-4">Le paiement est exigible immédiatement à la commande, y compris pour les produits en précommande. Le client peut effectuer le règlement par carte de paiement ou par virement bancaire.</p>
+            <h3 class="text-2xl font-semibold mb-2">Article 5 - Livraison</h3>
+            <p class="mb-4">La livraison est effectuée à l'adresse indiquée par le client lors de sa commande.</p>
+            <h3 class="text-2xl font-semibold mb-2">Article 6 - Rétractation</h3>
+            <p class="mb-4">Le client dispose d'un délai de 14 jours à compter de la réception de sa commande pour exercer son droit de rétractation sans avoir à justifier de motifs ni à payer de pénalité.</p>
           </div>
         </div>
-      </div>
-      <div class="md:hidden" id="mobile-menu" style="display: none">
-        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <a
-            href="#services"
-            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-            >Services</a
-          >
-        </div>
-        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <a
-            href="#domaines"
-            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-            >Domaines</a
-          >
-        </div>
-        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <a
-            href="#contact"
-            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-            >Contact resp</a
-          >
-        </div>
-      </div>
-    </nav>
-
-    <!-- Hero banner -->
-    <section
-      class="hero-banner bg-cover bg-center h-screen flex items-center justify-center custom"
-    >
-      <div class="text-center">
-        <h1 class="text-5xl text-gray-900 font-bold">dkp-consult</h1>
-        <p class="text-xl text-gray-700 mt-4">
-          Développeur, intégrateur, consulant en informatique et consultant en
-          gestion de projets !
-        </p>
-        <button
-          class="bg-green-200 text-gray-800 px-8 py-3 rounded-full font-bold mt-8 hover:bg-green-400"
-        >
-          <a href="#services">En savoir plus</a>
-        </button>
-      </div>
-    </section>
-
-    <!-- Section avec six cards -->
-
-    <section
-      class="max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8 min-h-screen"
-      id="services"
-    >
-      <h2 class="text-4xl font-bold text-gray-800 mb-8">Nos services</h2>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Webdev -->
-
-        <a href="https://example.com">
-          <div
-            class="bg-white rounded-lg shadow-lg overflow-hidden hover:bg-green-200"
-          >
-            <img
-              class="w-full h-48 object-cover"
-              src="https://picsum.photos/500/300"
-              alt="Card image"
-            />
-            <div class="p-4">
-              <h3 class="text-xl font-bold mb-2">Développeur web</h3>
-              <p class="text-gray-700 leading-tight h-48 text-justify">
-                En tant que développeur web, je suis spécialisé dans la création
-                de sites web de qualité et de solutions sur mesure. Je suis
-                également disponible pour assurer la maintenance et les mises à
-                jour nécessaires pour garantir le bon fonctionnement de votre
-                site web.
-              </p>
-            </div>
-          </div>
-        </a>
-
-        <!-- Domaines & messageries -->
-
-        <a href="https://example.com">
-          <div
-            class="bg-white rounded-lg shadow-lg overflow-hidden hover:bg-green-200"
-          >
-            <img
-              class="w-full h-48 object-cover"
-              src="https://picsum.photos/500/301"
-              alt="Card image"
-            />
-            <div class="p-4">
-              <h3 class="text-xl font-bold mb-2">Domaines et messagerie</h3>
-              <p class="text-gray-700 leading-tight h-48 text-justify">
-                En tant que spécialiste de l'informatique, je prends en charge
-                la gestion de vos noms de domaine et boîtes mail. Je peux
-                également configurer vos comptes et assurer la maintenance pour
-                une gestion sans soucis.
-              </p>
-            </div>
-          </div>
-        </a>
-
-        <!-- Consultant informatique -->
-
-        <a href="https://example.com">
-          <div
-            class="bg-white rounded-lg shadow-lg overflow-hidden hover:bg-green-200"
-          >
-            <img
-              class="w-full h-48 object-cover"
-              src="https://picsum.photos/500/302"
-              alt="Card image"
-            />
-            <div class="p-4">
-              <h3 class="text-xl font-bold mb-2">Consultant informatique</h3>
-              <p class="text-gray-700 leading-tight h-48 text-justify">
-                En tant que consultant informatique, j'aide les entreprises à
-                améliorer leur efficacité grâce aux technologies numériques. De
-                la conception de systèmes à la formation des utilisateurs, je
-                fournis des solutions sur mesure pour atteindre les objectifs de
-                mes clients.
-              </p>
-            </div>
-          </div>
-        </a>
-
-        <!-- Gestion de projet -->
-
-        <a href="https://example.com">
-          <div
-            class="bg-white rounded-lg shadow-lg overflow-hidden hover:bg-green-200"
-          >
-            <img
-              class="w-full h-48 object-cover"
-              src="https://picsum.photos/500/303"
-              alt="Card image"
-            />
-            <div class="p-4">
-              <h3 class="text-xl font-bold mb-2">Gestion de projet</h3>
-              <p class="text-gray-700 leading-tight h-48 text-justify">
-                En tant que consultant en gestion de projet informatique,
-                j'accompagne les entreprises dans la réalisation de leurs
-                projets en assurant la planification, l'organisation, la
-                coordination, la budgétisation et la communication. J'offre
-                également mes services pour d'autres types de projets
-                nécessitant une gestion rigoureuse.
-              </p>
-            </div>
-          </div>
-        </a>
-
-        <!-- Services informatiques -->
-
-        <a href="https://example.com">
-          <div
-            class="bg-white rounded-lg shadow-lg overflow-hidden hover:bg-green-200"
-          >
-            <img
-              class="w-full h-48 object-cover"
-              src="https://picsum.photos/500/304"
-              alt="Card image"
-            />
-            <div class="p-4">
-              <h3 class="text-xl font-bold mb-2">Services informatiques</h3>
-              <p class="text-gray-700 leading-tight h-48 text-justify">
-                En tant que consultant, je suis à votre disposition pour vous
-                conseiller dans l'acquisition de matériel informatique adapté à
-                vos besoins. Je peux également effectuer la configuration et la
-                mise en place de votre nouveau matériel en toute indépendance.
-              </p>
-            </div>
-          </div>
-        </a>
-
-        <!-- Coaching en outils numérique -->
-
-        <a href="https://example.com">
-          <div
-            class="bg-white rounded-lg shadow-lg overflow-hidden hover:bg-green-200"
-          >
-            <img
-              class="w-full h-48 object-cover"
-              src="https://picsum.photos/500/306"
-              alt="Card image"
-            />
-            <div class="p-4">
-              <h3 class="text-xl font-bold mb-2">
-                Coaching numériques
-              </h3>
-              <p class="text-gray-700 leading-tight h-48 text-justify">
-                En tant que spécialiste, je vous accompagne dans la découverte
-                de l'informatique pour une utilisation efficace et optimale des
-                outils. Le tout sur mesure et à votre rythme en aliant.
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <!-- Section Domaines d'activités -->
-
-    <section class="bg-gray-100 py-20 min-h-screen relative" id="domaines">
-      <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-        <!-- Image -->
-        <div class="w-full md:w-1/2 xl:w-1/2 px-4">
-          <img
-            src="https://picsum.photos/500/304"
-            alt="Image domaine"
-            class="w-full object-cover object-center rounded-lg shadow-md h-full"
-          />
-        </div>
-        <!-- Texte -->
-        <div class="w-full md:w-1/2 xl:w-1/2 pt-6 md:pt-0 px-6">
-          <div class="mb-4">
-            <h2 class="text-4xl font-bold text-gray-800 mb-8">
-              A propos de moi
-            </h2>
-            <p class="text-gray-700 leading-relaxed text-justify pb-3">
-              Bienvenue, moi c'est Pierre Debski, alias dkp-consult, un banquier
-              de 28 ans qui a travaillé comme responsable crédit et conseiller
-              financier pendant plusieurs années. J'ai une passion pour
-              l'informatique et le développement, et j'ai décidé de me lancer
-              dans la consultance informatique.
-            </p>
-            <p class="text-gray-700 leading-relaxed text-justify pb-3">
-              Je suis un véritable geek, passionné par les dernières
-              technologies et les tendances en matière de développement. J'aime
-              travailler sur des projets innovants et apporter des solutions
-              créatives à des problèmes complexes.
-            </p>
-            <p class="text-gray-700 leading-relaxed text-justify pb-3">
-              Mon expérience dans le domaine bancaire m'a permis de développer
-              des compétences en gestion de projet, en analyse financière et en
-              gestion de risques. Je suis capable de comprendre les besoins des
-              clients et de leur proposer des solutions sur mesure qui répondent
-              à leurs besoins.
-            </p>
-            <p class="text-gray-700 leading-relaxed text-justify pb-3">
-              En tant que consultant en informatique, je suis capable de
-              comprendre les exigences techniques et de travailler en étroite
-              collaboration avec les développeurs pour garantir la réussite du
-              projet. Je suis également en mesure de communiquer efficacement
-              avec les clients pour expliquer des concepts techniques de manière
-              simple et compréhensible.
-            </p>
-            <p class="text-gray-700 leading-relaxed text-justify pb-3">
-              Je suis convaincu que mes compétences en banque et en informatique
-              me permettent de proposer des solutions innovantes et rentables à
-              mes clients. Si vous cherchez un consultant informatique qui a à
-              la fois une connaissance de la finance et une passion
-              pour la technologie, je suis votre homme !
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section pour le contact par mail -->
-
-    <section class="py-20 h-screen" id="contact">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-3xl mx-auto text-center">
-          <h2 class="text-3xl font-bold">Contactez-moi</h2>
-          <p class="mt-4 text-gray-600">
-            Nous sommes toujours prêts à répondre à vos questions et à discuter
-            de vos projets.
-          </p>
-        </div>
-        <div class="mt-10 max-w-3xl mx-auto">
-          <form
-            action="#"
-            method="POST"
-            class="grid grid-cols-1 sm:grid-cols-2 gap-6"
-          >
-            <div>
-              <label for="name" class="block text-gray-700 font-bold mb-2"
-                >Nom complet</label
-              >
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Votre nom complet"
-                class="w-full border border-gray-400 p-2 rounded-md"
-              />
-            </div>
-            <div>
-              <label for="email" class="block text-gray-700 font-bold mb-2"
-                >Adresse e-mail</label
-              >
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Votre adresse e-mail"
-                class="w-full border border-gray-400 p-2 rounded-md"
-              />
-            </div>
-            <div class="sm:col-span-2">
-              <label for="subject" class="block text-gray-700 font-bold mb-2"
-                >Objet</label
-              >
-              <input
-                type="text"
-                name="subject"
-                id="subject"
-                placeholder="L'objet de votre message"
-                class="w-full border border-gray-400 p-2 rounded-md"
-              />
-            </div>
-            <div class="sm:col-span-2">
-              <label for="message" class="block text-gray-700 font-bold mb-2"
-                >Message</label
-              >
-              <textarea
-                name="message"
-                id="message"
-                rows="4"
-                placeholder="Votre message"
-                class="w-full border border-gray-400 p-2 rounded-md"
-              ></textarea>
-            </div>
-            <div class="sm:col-span-2 text-right">
-              <button
-                type="submit"
-                class="bg-gray-800 text-white px-6 py-3 rounded-md hover:bg-gray-700 font-bold"
-              >
-                Envoyer
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
+      </section>
+      
 
     <!-- Footer -->
 
