@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>dkp-consult</title>
+    <title>Ma page de documentation</title>
     <!--Tailwind CSS -->
     <!-- <link
       rel="stylesheet"
@@ -13,113 +13,941 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Fontawesome -->
-    <link rel="stylesheet" href="./libraries/font-awesome/css/all.css" />
+    <link rel="stylesheet" href="../libraries/font-awesome/css/all.css" />
     <!-- Custom css -->
-    <link rel="stylesheet" href="./styles/custom.css" />
+    <link rel="stylesheet" href="../styles/custom.css" />
   </head>
+  <body>
+    <!-- En-tête de la page -->
+    <header>
+      <nav class="bg-gray-800 fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+              <div class="flex-shrink-0">
+                <a href="#" class="text-white font-bold text-xl">dkp-consult</a>
+              </div>
+            </div>
+            <div class="hidden md:block">
+              <a
+                href="#services"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >Services</a
+              >
+            </div>
+            <div class="hidden md:block">
+              <a
+                href="#domaines"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >Domaines</a
+              >
+            </div>
+            <div class="hidden md:block">
+              <a
+                href="#contact"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >Contact</a
+              >
+            </div>
 
-  <body class="bg-gray-100">
-    <!-- navbar -->
-    <nav class="bg-gray-800 fixed w-full z-10">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-16">
-          <div class="flex items-center">
-            <div class="flex-shrink-0">
-              <a href="#" class="text-white font-bold text-xl">dkp-consult</a>
+            <div class="block md:hidden">
+              <button
+                type="button"
+                class="text-gray-500 hover:text-white focus:outline-none focus:text-white"
+                aria-label="Menu"
+                onclick="toggleMenu()"
+              >
+                <i class="fa fa-bars"></i>
+              </button>
             </div>
           </div>
-          <div class="hidden md:block">
+        </div>
+        <div class="md:hidden" id="mobile-menu" style="display: none">
+          <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a
               href="#services"
-              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >Services</a
             >
           </div>
-          <div class="hidden md:block">
+          <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a
               href="#domaines"
-              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >Domaines</a
             >
           </div>
-          <div class="hidden md:block">
+          <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a
               href="#contact"
-              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-              >Contact</a
+              class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >Contact resp</a
             >
           </div>
-          <div class="block md:hidden">
-            <button
-              type="button"
-              class="text-gray-500 hover:text-white focus:outline-none focus:text-white"
-              aria-label="Menu"
-              onclick="toggleMenu()"
-            >
-              <i class="fas fa-bars"></i>
-            </button>
-          </div>
         </div>
-      </div>
-    </nav>
-      
-    <div class="md:hidden" id="mobile-menu" style="display: none">
-        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <a
-            href="#services"
-            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-            >Services</a
-          >
-        </div>
-        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <a
-            href="#domaines"
-            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-            >Domaines</a
-          >
-        </div>
-        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <a
-            href="#contact"
-            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-            >Contact resp</a
-          >
-        </div>
-      </div>
+      </nav>
+    </header>
+    <!-- Contenu principal de la page -->
+    <main class="flex flex-col md:flex-row">
+      <!-- Menu de navigation -->
+      <!--       <nav
+        class="w-full md:w-1/5 h-screen fixed top-0 left-0 bg-gray-800 text-gray-100 overflow-y-auto md:block hidden"
+      >
+      <a href="#one" class="text-white">One</a>
+    </nav> -->
 
-      <div class="md:flex flex-col md:flex-row md:min-h-screen w-full">
-        <!-- Sidebar -->
-        <div class="bg-gray-100 md:w-1/6 mt-16">
-          <nav class="mt-10 px-6">
-            <a href="#" class="block py-3">Link 1</a>
-            <a href="#" class="block py-3">Link 2</a>
-            <a href="#" class="block py-3">Link 3</a>
-            <a href="#" class="block py-3">Link 4</a>
-          </nav>
-        </div>
+      <nav
+        class="sidebar w-full md:w-1/5 h-screen fixed top-0 left-0 bg-gray-800 text-gray-100 overflow-y-auto md:block hidden"
+      >
+        <ul class="sidebar-menu mt-20 text-center pb-3">
+          <li class="mb-4"><a href="#">Accueil</a></li>
+          <li class="mb-4"><a href="#">Produits</a></li>
+          <li class="mb-4"><a href="#">Services</a></li>
+          <li class="mb-4"><a href="#">À propos</a></li>
+          <li class="mb-4"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <button
+        class="md:hidden fixed bottom-4 right-4 bg-gray-800 text-gray-100 p-2 rounded"
+      >
+        <i class="fas fa-bars"> </i>
+      </button>
 
-        <!-- Content -->
-        <div class="flex-1 mt-16">
-          <div class="p-10">
-            <h2 class="text-2xl font-bold mb-4">Article 1</h2>
-            <p class="mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse consequat, eros quis venenatis tincidunt, magna velit
-              mollis velit, eget tincidunt libero mi quis tortor. Maecenas sit
-              amet aliquet turpis. Quisque feugiat nunc nec turpis posuere, sed
-              eleifend magna faucibus. Nam vel nibh eget purus blandit congue.
-            </p>
+      <!-- Contenu de la page -->
+      <section class="w-full md:w-4/5 p-4 md:p-8 ml-auto mt-16">
+        <!-- Contenu de la section -->
+        <h1 class="text-3xl font-bold mb-4">
+          Conditions générales de vente et prestation de services de dkp-consult
+        </h1>
+        <!-- Article 1 -->
+        <h2 class="text-2xl font-bold mb-4">1. Champ d’application</h2>
+        <p class="mb-4">
+          Les présentes conditions générales s’appliquent à toute proposition,
+          offre, convention et fourniture de services de dkp-consult (Debski
+          Pierre), établis à Visé, Allée des Muguets 16, possédant le numéro
+          d’entreprise BE 0800.491.510 (ci-après dénommée « dkp-consult »).
+        </p>
+        <p class="mb-4">
+          Selon les services à fournir ou fournis par dkp-consult (tels que,
+          sans toutefois s’y limiter, les services informatiques, notamment la
+          consultance, l’externalisation, l’hébergement, le développement de
+          sites et d’applications Internet, les formations en informatique et
+          les services connexes, des conseils en gestion, en outils numériques),
+          les présentes conditions générales peuvent être complétées par des
+          conditions particulières, dont les annexes éventuelles.
+        </p>
+        <p class="mb-4">
+          Les présentes conditions générales s’appliquent indépendamment des
+          dispositions contraires énoncées dans les documents du client. En
+          passant une commande, le client reconnaît avoir pris connaissance et
+          d'en accepter les termes dans leur intégralité. Celles-ci sont
+          disponibles sur le site internet de dkp-consult.
+        </p>
 
-            <h2 class="text-2xl font-bold mb-4">Article 2</h2>
-            <p class="mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse consequat, eros quis venenatis tincidunt, magna velit
-              mollis velit, eget tincidunt libero mi quis tortor. Maecenas sit
-              amet aliquet turpis. Quisque feugiat nunc nec turpis posuere, sed
-              eleifend magna faucibus. Nam vel nibh eget purus blandit congue.
-            </p>
-          </div>
-        </div>
-      </div>
+        <!-- Article 2 -->
+        <h2 class="text-2xl font-bold mb-4">
+          2. Devis, offres, conclusion et résiliation du contrat
+        </h2>
+        <p class="mb-4">
+          Les propositions, offres et devis de dkp-consult sont formulées sans
+          engagement. La durée de validité de toute offre formulée par
+          dkp-consult au client est de 30 jours, à compter de la date de
+          l’offre, sauf mention contraire.
+        </p>
+        <p class="mb-4">
+          Le contrat est formé par l’offre approuvé par le client, ainsi que par
+          les présentes conditions générales le cas échéant complétées par des
+          conditions particulières. Il est réputé refléter intégralement les
+          accords verbaux et écrits des deux parties et remplacer les éventuels
+          accords et/ou propositions verbaux et écrits antérieurs relatifs à
+          l’objet du contrat.
+        </p>
+        <p class="mb-4">
+          Tous les prix s’entendent TVA incluse, dkp-consult opérant sous le
+          régime de la franchise TVA.
+        </p>
+        <p class="mb-4">
+          Une commande peut être annulée, dans ce cas le client sera tenu
+          d’indemniser dkp-consult pour les frais déjà exposé (par exemple,
+          réservation d’un hébergement pour un an, achat du nom de domaine), en
+          cas d’annulation dkp-consult aura la faculté de facturer des frais
+          d’annulation à hauteur de 10% du prix convenu avec un minimum de 50€.
+        </p>
+        <!-- Article 3 -->
+        <h2 class="text-2xl font-bold mb-4">3. Obligations de dkp-consult</h2>
+        <p class="mb-4">
+          dkp-consult est tenu par une obligation de moyens dans le cadre des
+          services fournis.
+        </p>
+        <p class="mb-4">
+          Le prestataire s’engage à fournir dans les meilleurs délais la
+          livraison des commandes effectuées (les délais diffèrent selon la
+          nature de la commande) et s’engage à tout mettre en œuvre en vue de la
+          satisfaction du client, mais décline toute responsabilité en cas de
+          problème technique majeur qui ferait obstacle à la réalisation du
+          contrat (force majeure, cause de coupure prolongée de réseau Internet
+          indépendante de notre volonté …).
+        </p>
+        <p class="mb-4">
+          Tous les délais d’exécution communiqués par dkp-consult le sont à
+          titre indicatif et ne sont pas contraignants. Si dkp-consult ne
+          fournit pas ses services dans les délais notifiés, le client ne peut
+          réclamer une quelconque indemnisation ni ne peut, dans un tel cas,
+          suspendre le paiement des montants dus.
+        </p>
+        <p class="mb-4">
+          Si les services ne sont pas fournis dans les délais notifiés en raison
+          de circonstances imprévues et indépendantes de sa volonté, elle en
+          informera immédiatement le client et fera tout son possible pour
+          réduire les retards à un minimum.
+        </p>
+        <p class="mb-4">
+          Certaines réalisations sont tributaires à la fourniture, par le
+          client, d’informations et/où d’éléments techniques en vue de la
+          réalisation de la commande, si le client commet des manquements qui
+          retardent la fourniture ou prestation de service, cela ne peut
+          nullement mettre un frein aux obligations de paiement.
+        </p>
+        <p class="mb-4">
+          Si le retard dans la fourniture de services est dû à un manquement du
+          client à fournir des informations ou des éléments techniques
+          nécessaires à la réalisation de la commande, dkp-consult pourra
+          réviser le calendrier d'exécution et facturer des frais
+          supplémentaires pour compenser les coûts supplémentaires liés à ce
+          retard.
+        </p>
+        <p class="mb-4">
+          Le client déclare accepter les caractéristiques et les limites de
+          l’Internet et reconnaît en particulier les points suivants : le
+          prestataire n’est pas hébergeur et ne garantit en aucun cas la
+          protection totale des données circulant sur le web, notamment contre
+          des détournements éventuels de la part d’internautes malveillants et
+          ne pourra en aucun cas être tenu pour responsable de problèmes liés à
+          l’hébergement, à la fiabilité de la transmission de données, aux temps
+          d’accès, à la rapidité de chargement du site web ou à un défaut
+          paiement par carte bancaire, virement bancaire ou chèque pour un site
+          de e-commerce.
+        </p>
+        <p class="mb-4">
+          Le prestataire livre un produit fini répondant aux spécifications du
+          devis. En aucun cas, il ne peut garantir que le site demandé par le
+          client lui assurera une augmentation de ses ventes ou que le travail
+          fourni générera automatiquement des visites sur le site.
+        </p>
+
+        <!-- Article 4 -->
+        <h2 class="text-2xl font-bold mb-4">4. Obligations du client</h2>
+        <p class="mb-4">
+          Les produits et services livrés peuvent être exclusivement utilisés
+          pour des activités, qui sont conformes à la législation applicable.
+          Par les présentes, le client déclare explicitement que dkp-consult
+          n’assume aucune responsabilité quant aux opérations du client sur
+          l’Internet et exonère dkp-consult de toute conséquence pénale et/ou
+          civile y afférente.
+        </p>
+        <p class="mb-4">
+          Liste non limitatives d’utilisations dont le client s’abstiendra :
+        </p>
+        <ul class="mb-4">
+          <li>
+            opérations ou publicités pour des activités violent les droits de
+            dkp-consult ou d’une tierce partie;
+          </li>
+          <li>
+            conserver, partager, mettre à disposition du contenu pornigraphique,
+            obscène, discriminant, haineux, ou de tout autres contenus dont la
+            diffusions pourrait mener à des poursuites judiciaires;
+          </li>
+          <li>
+            conserver, partager, mettre à disposition du contenu violent le
+            droit de propriété intellectuelle de tiers ;
+          </li>
+          <li>
+            collecter, traiter, conserver, autoriser l’accès ou partager des
+            informations y compris des données personnelles si ces informations
+            ont été recueillies en violent les bases légales, mais également si
+            ces éléments se veulent discriminant, dégradant, etc ;
+          </li>
+          <li>
+            d’utiliser les services fournis afin d’effectuer des opérations tels
+            que, mais sans se limiter à celles-ci : phishing, mails bombs, spam,
+            etc;
+          </li>
+          <li>
+            exécuter des opérations punies ou pouvant être punie en vertue de la
+            législation sur la criminalité numériques ;
+          </li>
+        </ul>
+        <p class="mb-4">
+          Le client aura la responsabilité et décharge dkp-consult de celle-ci,
+          concernant la gestion et le traitement des données à caractères
+          personnelles collectées, il sera nécessaire de se conformer aux
+          différentes réglementations et lois régissant les données à caractères
+          personnelles.
+        </p>
+        <p class="mb-4">
+          Le client s'engage à utiliser les produits et services livrés
+          conformément aux lois et règlements applicables, y compris en matière
+          de protection des données à caractère personnel, et à indemniser
+          dkp-consult pour toute violation de ces lois et règlements.
+        </p>
+        <p class="mb-4">
+          Dans le cas où la gestion des données à caractère personnelles est
+          explicitement souhaitée, celle-ci sera nommément citée dans le contrat
+          et fera l’objet d’un accord spécifique complémentaire aux présentes
+          conditions générales.
+        </p>
+        <!-- Article 5 -->
+
+        <h2 class="text-2xl font-bold mb-4">5. Conditions de paiement</h2>
+        <p class="mb-4">
+          Les factures sont exclusivement envoyées par courriel au client et
+          sont dues dans un délai de 15 jours calendrier à compter de la date de
+          la facture. À défaut d’une contestation écrite dans un délai de 10
+          jours calendrier à compter de la date de la facture, cette dernière,
+          ainsi que les produits et services qui y sont renseignés, sont réputés
+          être irrévocablement acceptés.
+        </p>
+        <p class="mb-4">
+          Sauf convention écrite contraire, tous les paiements doivent être
+          exécutés sans aucune déduction ni compensation. Si le délai de
+          paiement est dépassé, le client est alors redevable, automatiquement
+          et sans aucune mise en demeure préalable, de frais administratifs d’un
+          montant de 25,- EUR et d’intérêts de retard mensuels de 1 %, étant
+          entendu que tout mois débuté est comptabilisé comme un mois complet.
+        </p>
+        <p class="mb-4">
+          En cas d’absence de paiement dans les 15 jours de la livraison du
+          service, dans les 15 jours suivant l’échéance de renouvellement, le
+          service sera mis hors ligne et une indemnité forfaitaire de 50€ sera
+          exigée pour relancer le ou les services, le solde majoré de
+          l’indemnité de 50€ sera à apurer pour la remise en route du ou des
+          services. Aucune indemnité ne pourra être réclamée à dkp-consult pour
+          un éventuel manque à gagner ou une perte de clients, la responsabilité
+          du paiement étant dans le chef du client.
+        </p>
+        <p class="mb-4">
+          Si une réduction avait été accordée durant les échanges précédents,
+          celle-ci prend fin à effet immédiat en cas de non-respect des délais
+          de paiement.
+        </p>
+
+        <!-- Article 6. Durée et échéance du contrat -->
+        <h2 class="text-2xl font-bold mb-4">6. Durée et échéance du contrat</h2>
+        <p class="mb-4">
+          La durée de la prestation de service sera mentionnée sur le devis et
+          la facture pour les services renouvelables annuellement. 30 jours
+          avant la date d'échéance, une facture de renouvellement sera envoyée
+          au client.
+        </p>
+        <p class="mb-4">
+          Si le client ne souhaite pas renouveler le service, il doit envoyer un
+          e-mail à dkp-consult au minimum 60 jours avant la date d'échéance pour
+          informer de sa décision. Si aucun e-mail n'est reçu et confirmé par
+          dkp-consult, le service sera considéré comme renouvelé, et le paiement
+          sera exigé selon les modalités précisées dans les conditions
+          générales.
+        </p>
+        <p class="mb-4">
+          Pour les prestations de services uniques et sans frais d'abonnement,
+          le contrat prendra fin automatiquement à la livraison définitive du
+          service. Le paiement du solde sera considéré comme un accord et une
+          acceptation du service fourni, conforme au devis et aux factures
+          liées.
+        </p>
+
+        <!-- Article 7. Propriétés du client et de dkp-consult -->
+        <h2 class="text-2xl font-bold mb-4">
+          7. Propriétés du client et de dkp-consult
+        </h2>
+        <p class="mb-4">
+          Tout élément fourni par le client reste sa propriété (images, textes,
+          logo, base de données, etc) et ce peu importe le moyen de
+          transmission. Les éléments reçus du client afin de permettre la
+          prestation de service sont considérés comme étant sa propriété, ou
+          ayant fait l’objet d’une autorisation d’utilisation conformément aux
+          droits à la propriété intellectuelle, le prestataire ne réalisera pas
+          de vérification spécifique à cet égard et considérera de bonne foi que
+          l’ensemble des éléments reçus sont utilisables par le client. Dans le
+          cas d’une réclamation par un tiers, dkp-consult pourra réclamer de
+          plein droit les frais encourus auprès du client responsable.
+        </p>
+        <p class="mb-4">
+          Tout élément modifié par dkp-consult et fourni par le client est la
+          propriété du client en ce qui concerne l'élément de départ, et la
+          propriété de dkp-consult en ce qui concerne les modifications s'il
+          s'agit d'éléments de programmation. Dans le cas où dkp-consult a créé
+          des éléments originaux, ces éléments appartiennent à dkp-consult, mais
+          le client dispose d'une licence non exclusive pour les utiliser dans
+          le cadre de la prestation de service.
+        </p>
+        <p class="mb-4">
+          Sauf convention contraire dans les conditions particulières, tout code
+          informatique écrit en vue d'être utilisé par le client restera la
+          propriété de dkp-consult jusqu'au terme du contrat de services. À la
+          fin du contrat, le client pourra récupérer l'intégralité du code
+          source au format numérique, moyennant le paiement de frais
+          forfaitaires définis dans les conditions particulières.
+        </p>
+        <p class="mb-4">
+          dkp-consult se réserve le droit de mentionner sa réalisation pour la
+          société cliente comme référence et de citer des extraits textuels ou
+          iconographiques des œuvres concernées dans le strict cadre de ses
+          démarches de prospection commerciale, de communication externe et de
+          publicité.
+        </p>
+        <p class="mb-4">
+          Toute réserve au droit de publicité devra être notifiée et négociée
+          avant la signature du devis et mentionnée sur la facture. Le client
+          peut également demander à ce que sa réalisation ne soit pas
+          mentionnée, auquel cas dkp-consult s'engage à ne pas le faire.
+        </p>
+
+        <!-- Article 8. Tolérance -->
+        <h2 class="text-2xl font-bold mb-4">8. Tolérance</h2>
+        <p class="mb-4">
+          Le fait que dkp-consult ne se prévale pas à un moment donné à l'une
+          quelconque des présentes conditions générales ou tolère un manquement
+          par l'autre partie à l'une quelconque des obligations visées dans les
+          présentes conditions générales ne peut être interprété comme une
+          renonciation au droit de faire valoir ces conditions ultérieurement.
+        </p>
+        <!-- Article 9. Confidentialités -->
+        <h2 class="text-2xl font-bold mb-4">9. Confidentialités</h2>
+        <p class="mb-4">
+          Chacune des parties s’engage à considérer comme confidentielles toutes
+          les informations et données qui lui sont communiquées par l'autre
+          partie à l'occasion de l'exécution du présent contrat, qu'elles soient
+          verbales, écrites ou sous forme électronique. Ces informations
+          incluent notamment les documents, systèmes, logiciels et savoir-faire
+          en provenance de l'autre partie.
+        </p>
+        <p class="mb-4">
+          Chacune des parties s'engage à ne pas divulguer ces informations
+          confidentielles à des tiers, sauf autorisation écrite de l'autre
+          partie ou obligation légale contraire. Les parties s'engagent à
+          prendre toutes les mesures nécessaires pour assurer la sécurité, la
+          confidentialité et la protection des informations confidentielles, et
+          à ne les utiliser qu'aux seules fins nécessaires à l'exécution du
+          présent contrat.
+        </p>
+        <p class="mb-4">
+          Ces obligations de confidentialité continueront de s'appliquer pendant
+          la durée du présent contrat et pendant une durée de 3 mois à compter
+          de son expiration ou de sa résiliation.
+        </p>
+
+        <!-- Article 10. Dispositions générales -->
+        <h2 class="text-2xl font-bold mb-4">10. Dispositions générales</h2>
+        <p class="mb-4">
+          dkp-consult peut à tout moment modifier les présentes conditions
+          générales, les conditions particulières, ses prix, les modalités
+          techniques et/ou les spécifications techniques de ses services. Sauf
+          si elles sont nécessaires en termes techniques, de telles
+          modifications produiront leurs effets au plus tôt 30 jours calendrier
+          après leur publication sur le site internet de dkp-consult.
+        </p>
+        <p class="mb-4">
+          Si une ou plusieurs dispositions du contrat conclu entre dkp-consult
+          et le client devaient être invalides ou frappées de nullité ou
+          déclarées invalides ou nulles par une autorité judiciaire
+          indépendante, les autres dispositions continueront de produire dûment
+          leurs effets. Dans un tel cas, les parties remplaceront cette
+          disposition invalide ou nulle par une disposition valide exprimant au
+          mieux l’objectif de la disposition initiale.
+        </p>
+        <p class="mb-4">
+          Le client ne peut céder tout ou partie du contrat qu’il a conclu avec
+          dkp-consult ni prêter, louer, donner en leasing, vendre ou mettre
+          autrement à disposition de tiers les produits et services de
+          dkp-consult, ou des parties de ces derniers, sans avoir obtenu
+          l’autorisation écrite préalable.
+        </p>
+        <p class="mb-4">
+          Tout contrat conclu avec dkp-consult est exclusivement soumis au droit
+          belge. Si les parties ne peuvent trouver un arrangement à l’amiable
+          relatif à un litige qui les oppose et relatif à la conclusion,
+          l’exécution, l’interprétation ou la résiliation de tout contrat conclu
+          avec dkp-consult, ce litige sera exclusivement tranché par les
+          tribunaux compétents de Liège.
+        </p>
+        <!-- Conditions liée à l'hébergement web -->
+        <h1 class="text-3xl font-bold mb-4">
+          Conditions particulières relatives à l’hébergement web
+        </h1>
+        <p class="mb-4">
+          Les présentes conditions particulières s’appliquent si le client
+          achète des services d’hébergement web à dkp-consult.
+        </p>
+        <p class="mb-4">
+          Par « services d’hébergement web », il convient d’entendre : la
+          possibilité pour le client de télécharger et de consulter des données
+          sur un serveur web via l’Internet.
+        </p>
+        <p class="mb-4">
+          Ce service d’hébergement web est indépendant et ne peut être confondu
+          avec le développement et/ou la maintenance des sites Internet,
+          d’applications Internet, de bases de données, etc., dont les
+          conditions particulières sont disponibles ci-dessous.
+        </p>
+
+        <h2 class="text-2xl font-bold mb-4">1. Objet</h2>
+        <p class="mb-4">
+          dkp-consult propose au client, acceptant ces dernières, des services
+          d’hébergement web, conformément aux conditions générales en vigueur et
+          aux présentes conditions particulières, ainsi que, le cas échéant, aux
+          spécifications énoncées dans le devis ou la facture approuvé par le
+          client.
+        </p>
+        <p class="mb-4">
+          S’il n’est pas fait mention dans le devis ou la facture des
+          caractéristiques techniques, les spécificités minimales seront
+          d’applications :
+        </p>
+        <ul class="mb-4">
+          <li>Type de serveur : Linux</li>
+          <li>Type d’hébergement : Mutualisé</li>
+          <li>Espace disponible : 100Go de stockage SSD NVME</li>
+          <li>Base de données MySQL : 1</li>
+          <li>
+            Compte de messageries : 10 maximum (5Go/boite et 100Mo pièces
+            jointes)
+          </li>
+          <li>RAM : 8 Go</li>
+        </ul>
+        <p class="mb-4">
+          dkp-consult collabore avec un partenaire spécialisé dans l’hébergement
+          web. Celui-ci peut à tout moment modifier ses conditions, tarifs,
+          spécifications techniques. Dans ce cas, dkp-consult imposera les
+          augmentations tarifaires aux clients et indiquera les modifications
+          techniques réalisées. Les coordonnées et les différentes conditions
+          générales du prestataire sont disponibles sur simple demande.
+        </p>
+        <p class="mb-4">
+          Les services d’hébergement web sont fournis par année calendaire, sous
+          réserve du paiement de l’indemnité due par le client. Si le client
+          souhaite résilier ce service, il est tenu de le faire au plus tard 2
+          mois avant la date d’échéance annuelle. En cas de résiliation tardive,
+          le client devra acquitter l’indemnité relative à l’année calendaire
+          suivante.
+        </p>
+        <p class="mb-4">
+          La responsabilité de dkp-consult ne peut en aucun cas être engagée
+          pour toute interruption des services d’hébergement web découlant d'une
+          panne du serveur du partenaire hébergeur.
+        </p>
+
+        <h2 class="text-2xl font-bold mb-4">2.Engagement du client</h2>
+        <p class="mb-4">
+          Le client utilisera exclusivement les services d’hébergement web
+          fournis par dkp-consult aux fins de la gestion de son site Internet et
+          des activités connexes.
+        </p>
+        <p class="mb-4">
+          Le client assume toujours la responsabilité liée à toute utilisation
+          du service d’hébergement web sans préjudice des dispositions
+          ci-dessous. Dans ce cadre, dkp-consult part du principe que le service
+          d’hébergement web est toujours exclusivement utilisé au nom et pour le
+          compte du client.
+        </p>
+        <p class="mb-4">
+          Le client est plus particulièrement responsable et exonère toujours
+          dkp-consult pour tous les dommages et frais (y compris les honoraires
+          d’avocat et les frais de procédure) auxquels dkp-consult ou tout tiers
+          sont exposés à la suite de :
+        </p>
+        <ul class="mb-4 list-disc list-inside">
+          <li>
+            l’hébergement de données, programmes informatiques et bases de
+            données que le client met à la disposition de dkp-consult dans le
+            cadre du présent contrat ainsi que l’utilisation qui en est faite
+          </li>
+          <li>
+            l’envoi ou la mise à disposition de messages électroniques non
+            demandés à des fins commerciales
+          </li>
+          <li>
+            l’envoi ou la mise à disposition de messages électroniques trompeurs
+          </li>
+          <li>
+            toute autre opération interdite en vertu des conditions générales ;
+          </li>
+        </ul>
+        <p class="mb-4">
+          Le client est responsable de la sécurité de l'accès et de
+          l'utilisation des données, programmes informatiques et bases de
+          données hébergés par dkp-consult ou son partenaire. À cet effet, le
+          client doit prendre les mesures nécessaires et élaborer des procédures
+          appropriées.
+        </p>
+        <p class="mb-4">
+          Si un virus ou un autre élément destructeur est détecté dans le cadre
+          de l’hébergement web, il sera considéré que le client est informé de
+          cette situation et tentera immédiatement d’éliminer le virus ou les
+          scripts nuisibles.
+        </p>
+        <p class="mb-4">
+          Le client est tenu d’informer dkp-consult si des virus ou d’autres
+          éléments destructeurs sont détectés, et dkp-consult se réserve le
+          droit de facturer au client les frais engagés afin d’éliminer un tel
+          virus ou élément destructeur. Mais également d’agir directement afin
+          de stopper l’éventuelle propagation du virus ou des éléments
+          destructeurs. dkp-consult informera le client d’une estimation des
+          frais encourus.
+        </p>
+
+        <h2 class="text-2xl font-bold mb-4">
+          3. Suspension de la prestation des services
+        </h2>
+        <p class="mb-4">
+          Le client reconnaît explicitement que dkp-consult peut suspendre tout
+          ou partie de sa prestation de services dans les cas suivants, et ce,
+          sans avertissement ni mise en demeure préalable et sans que le client
+          puisse bénéficier d’une quelconque forme d’indemnisation ou de
+          remboursement :
+        </p>
+        <ul>
+          <li>
+            si dkp-consult reçoit une plainte stipulant raisonnablement que les
+            données que dkp-consult gère, envoie ou reçoit au nom du client
+            violent un droit de propriété (intellectuelle) ou une disposition
+            pénale ;
+          </li>
+          <li>
+            si des travaux de maintenance urgents doivent être exécutés sur
+            l’infrastructure de dkp-consult, de son partenaire et/ou du client ;
+          </li>
+          <li>
+            si cela peut être raisonnablement admis pour des motifs de sécurité
+            ;
+          </li>
+          <li>
+            si le client viole ou est raisonnablement réputé violer les
+            conditions générales ou les présentes conditions particulières.
+          </li>
+        </ul>
+        <p class="mb-4">
+          Dans tous les cas, dkp-consult s'efforcera de limiter autant que
+          possible l'impact de la suspension sur les activités du client.
+          Toutefois, le client reconnaît qu'il ne pourra pas bénéficier d'une
+          quelconque forme d'indemnisation ou de remboursement en cas de
+          suspension. La suspension reste d’application tant que la situation
+          problématique ne sera résolue.
+        </p>
+        <p class="mb-4">
+          Le client reconnaît également explicitement que dkp-consult n’est pas
+          tenue d’analyser ou de contrôler activement les données gérées,
+          envoyées ou reçues au nom du client. Toutefois, en cas de plainte d'un
+          tiers concernant ces données, dkp-consult pourra suspendre la
+          prestation de services comme mentionné précédemment.
+        </p>
+
+        <!-- Article 4: Copies de sauvegarde -->
+        <h2 class="text-2xl font-bold mb-4">Numéro + titre de l'article</h2>
+        <p class="mb-4">
+          dkp-consult s’engage à ne pas modifier ni détruire les données du
+          client sans avoir reçu son autorisation écrite préalable, sauf après
+          l’échéance ou la résiliation du contrat. En cas de résiliation du
+          contrat, dkp-consult s’engage à restituer au client l’ensemble de ses
+          données, avant destruction, à condition que celui-ci soit à jour dans
+          ses paiements et qu’aucun litige n’ait été soulevé entre les parties.
+        </p>
+        <p class="mb-4">
+          Sauf disposition contraire écrite, dkp-consult n’est pas tenue de
+          créer des copies de sauvegarde des données du client. Si des copies de
+          sécurités sont souhaitées, celles-ci seront mentionnées dans le devis.
+        </p>
+
+        <!-- Article 5: Durée et résiliation -->
+        <h2 class="text-2xl font-bold mb-4">5. Durée et résiliation</h2>
+        <p class="mb-4">
+          Sauf disposition contraire écrite, la durée de tout contrat conclu
+          avec dkp-consult est de douze (12) mois. Sauf résiliation écrite
+          signifiée à l’autre partie au moins deux (2) mois avant l’échéance, ce
+          contrat est automatiquement prolongé d’une même durée quand il arrive
+          à son échéance.
+        </p>
+        <p class="mb-4">
+          À défaut d’une résiliation ponctuelle signifiée par le client, ce
+          dernier reconnaît que le montant total dû pour la fourniture des
+          services d’hébergement web sera également dû pour la prolongation de
+          la durée.
+        </p>
+        <p class="mb-4">
+          dkp-consult peut résilier le contrat avec effet immédiat, sans mise en
+          demeure et sans l'intervention d'un organe judiciaire, en cas de
+          faillite, de liquidation amiable, de redressement judiciaire ou de
+          dissolution du client.
+        </p>
+
+        <!-- Conditions particulières relatives au développement et à la maintenance d’application web, site internet, bases de données, etc -->
+        <h1 class="text-3xl font-bold mb-4">
+          Conditions particulières relatives au développement et à la
+          maintenance d’application web, site internet, bases de données, etc
+        </h1>
+
+        <h2 class="text-2xl font-bold mb-4">1. Objet</h2>
+        <p class="mb-4">
+          dkp-consult développe les applications web, sites internet, bases de
+          données ou tout autre logiciel conformément à ses conditions générales
+          et aux présentes conditions particulières ainsi qu’aux éventuelles
+          spécifications énoncées dans l’offre approuvée par le client. La
+          manière dont dkp-consult fournira au client les développements
+          réalisés sera, le cas échéant, spécifiée dans le devis.
+        </p>
+        <p class="mb-4">
+          Les parties peuvent convenir que le contrat sera exécuté en plusieurs
+          phases. Dans ce cas, dkp-consult peut suspendre l'exécution de la
+          phase suivante jusqu'à ce que le client ait approuvé par écrit les
+          services fournis au cours de la phase précédente et effectuer le
+          paiement de la facture correspondant à la phase précédente.
+        </p>
+
+        <h2 class="text-2xl font-bold mb-4">
+          2. Droits de propriétés intellectuelle
+        </h2>
+        <p class="mb-4">
+          Sauf disposition contraire écrite, tous les droits de propriété
+          intellectuelle relatifs aux programmes informatiques, bases de
+          données, sites Internet, etc., développés par ou au nom de dkp-consult
+          pour le client, y compris les améliorations, ajouts ou adaptations qui
+          y sont apportés, demeurent la propriété exclusive de dkp-consult, même
+          lorsque le code source a été communiqué au client.
+        </p>
+        <p class="mb-4">
+          Pour cette raison, la mention « création dkp-consult ainsi qu’un lien
+          vers son site», ou équivalent, devra apparaître sur le site du client.
+        </p>
+        <p class="mb-4">
+          Après paiement du prix intégral des développements convenus, le client
+          bénéficie d’une licence non exclusive, mondiale et libre de redevances
+          lui permettant d’utiliser les développements, améliorations, ajouts et
+          adaptations pendant une durée indéterminée correspondant aux
+          différents contrats de prestation de services.
+        </p>
+
+        <p class="mb-4">
+          En cas de fin de relation, moyennant accord écrit et frais forfaitaire
+          éventuelle, le client pourrait conserver ce droit d’usage
+          indéfiniment, à condition de conserver un lien vers le site de
+          dkp-consult et devra laisser apparaître l’attribution de la création.
+        </p>
+        <p class="mb-4">
+          dkp-consult considère que tous les projets, bases de données,
+          descriptions de processus, études de marché et autres données
+          confidentielles de l’entreprise appartiennent au client et ce dernier
+          déclare qu’il peut les communiquer à dkp-consult aux fins de
+          l’utilisation que le client souhaite en faire.
+        </p>
+        <p class="mb-4">
+          Le client exonère dkp-consult de toute responsabilité et de tout
+          préjudice que dkp-consult subit ou risque de subir si le client viole
+          les droits de tous tiers s’il utilise de tels travaux et/ou données.
+          Le client assume l’entière responsabilité relative au paiement aux
+          tiers de toute indemnisation y afférente.
+        </p>
+
+        <h2 class="text-2xl font-bold mb-4">3. Responsabilité du client</h2>
+        <p class="mb-4">
+          Le client est le responsable final de tout ce qui est publié et
+          divulgué par le biais de l’application web, du site Internet ou de la
+          base de données.
+        </p>
+        <p class="mb-4">
+          Plus spécifiquement, tous les textes, même ceux rédigés et fournis par
+          dkp-consult dans le cadre du développement d’un site Internet,
+          relèvent de la responsabilité finale du client. Le client doit
+          vérifier l’intégralité du site Internet ou de l’application web et est
+          réputé accepter tous les textes s’il ne réagit pas au plus tard à la
+          date de la réception définitive.
+        </p>
+        <p class="mb-4">
+          Sauf convention contraire écrite, toutes les illustrations, photos et
+          tous les fichiers média utilisés dans le site Internet ou
+          l’application web sont supposés avoir été fournis par le client qui
+          assume l’entière responsabilité de leur utilisation.
+        </p>
+
+        <!-- Article 4: Informations -->
+        <h2 class="text-2xl font-bold mb-4">4. Informations</h2>
+        <p class="mb-4">
+          Pendant la durée du contrat, le client offrira l’assistance et
+          communiquera les informations nécessaires à dkp-consult afin que cette
+          dernière puisse respecter ses obligations contractuelles conformément
+          aux règles de l’art. En cas de manquement à la présente disposition,
+          dkp-consult ne pourra être tenu pour responsable des éventuels retards
+          de livraison, manque à gagner ou toutes pertes potentielles dans le
+          chef du client.
+        </p>
+
+        <!-- Article 5: Maintenance, abonnement-->
+        <h2 class="text-2xl font-bold mb-4">5. Maintenance, abonnement</h2>
+        <p class="mb-4">
+          Sur demande expresse du client, et moyennant souscription d’un service
+          de maintenance, dkp-consult peut proposer des services relatifs aux
+          applications web, aux sites Internet et/ou aux bases de données du
+          client ou développés pour le client. De tels services seront fournis
+          conformément aux spécifications énoncées dans l’offre approuvée par le
+          client et aux conditions contractuelles visées ci-dessous.
+        </p>
+        <p class="mb-4">
+          Sauf mention contraire explicite, les engagements de dkp-consult dans
+          la présente disposition, sont des obligations de moyens et non de
+          résultats.
+        </p>
+        <p class="mb-4">
+          La maintenance consiste à des interventions minimes et
+          non-récurrentes, s’il s’agit d'interventions jugées trop répétitives
+          ou conséquentes, la maintenance ne sera plus possible et une analyse
+          sur les objectifs et souhaits du client sera faite. Cette analyse
+          pourrait découler sur une prestation de développement et un devis sera
+          établi afin de cibler au mieux le souhait du client.
+        </p>
+        <p class="mb-4">
+          Les parties conviennent explicitement que dkp-consult peut facturer
+          préalablement ses services de maintenance au client et peut suspendre
+          l’exécution du contrat et des différents services jusqu’à ce que le
+          client ait acquitté les montants dus. Le service de maintenance peut
+          se voir facturer annuellement, semestriellement, trimestriellement et
+          mensuellement.
+        </p>
+        <p class="mb-4">
+          Le contrat de maintenance est conclu avec le client pour une durée
+          indéterminée et peut être résilié sous réserve de la signification de
+          la résiliation au moins deux (2) mois avant la date d’échéance du
+          contrat. Pendant la durée du contrat, dkp-consult peut unilatéralement
+          modifier le tarif contractuel, pour autant qu’elle en notifie le
+          client au moins deux mois au préalable. Si le client n’accepte pas la
+          majoration de prix annoncée, dkp-consult doit résilier le contrat à
+          temps avant l’entrée en vigueur de la modification tarifaire.
+        </p>
+        <p class="mb-4">
+          Si aucun contrat de maintenance n’est conclu, la durée de garantie
+          d’un projet finalisé est de 1 mois à compter de la date de la
+          réception définitive. Passé ce délai, toutes modifications éventuelles
+          feront l’objet d’un devis et d’une facturation aux modalités de
+          paiements précisées dans le devis, les conditions générales ou les
+          conditions particulières.
+        </p>
+        <p class="mb-4">
+          dkp-consult décline toute responsabilité quant aux conséquences, tant
+          financières qu’en termes d’image, d’un site Internet piraté ou infecté
+          par des personnes malveillantes via des pourriels ou autres virus et
+          infections. dkp-consult mettra tout en œuvre afin de compliquer autant
+          que possible la tâche d’un pirate. Toutefois, dkp-consult décline
+          toute responsabilité afférente aux actions des pirates et autres
+          personnes malveillantes.
+        </p>
+
+        <!-- Article 6: Durée et résiliation -->
+        <h2 class="text-2xl font-bold mb-4">4. Informations</h2>
+        <p class="mb-4">
+          Le contrat conclu pour le développement d'applications web, de sites
+          internet, de bases de données ou autres logiciels prend effet à la
+          date indiquée dans l'offre approuvée par le client et se termine à la
+          date de réception définitive et d'acceptation par le client, sauf
+          disposition contraire. La date de réception définitive correspond à la
+          date de la facture de clôture émise par dkp-consult, sauf si le client
+          réagit dans un délai de 10 jours ouvrables suivant la date de la
+          réception définitive. Si aucun retour n'est donné dans ce délai, les
+          travaux sont considérés comme acceptés.
+        </p>
+        <p class="mb-4">
+          En revanche, pour un contrat d'abonnement de maintenance
+          d'applications web, de sites internet ou de bases de données, le
+          contrat prend effet à la date indiquée dans l'offre approuvée par le
+          client ou à la date d'acceptation et de réception définitives des
+          développements faisant l'objet du contrat. Ce contrat est renouvelé
+          tacitement, sauf si l'une des parties le résilie en respectant un
+          préavis de 2 mois.
+        </p>
+
+        <!-- Conditions particulières relatives à l’enregistrement d’un nom de domaine -->
+        <h1 class="text-3xl font-bold mb-4">
+          Conditions particulières relatives à l’enregistrement d’un nom de
+          domaine
+        </h1>
+
+        <h2 class="text-2xl font-bold mb-4">1. Objet</h2>
+        <p class="mb-4">
+          dkp-consult propose à ses clients d'enregistrer un nom de domaine en
+          leur nom. Pour ce faire, dkp-consult fera appel à un agent de son
+          choix, conformément aux conditions générales et particulières en
+          vigueur.
+        </p>
+        <p class="mb-4">
+          dkp-consult agit au nom et pour le compte du client dans le cadre de
+          l'enregistrement d'un nom de domaine.
+        </p>
+        <p class="mb-4">
+          L'enregistrement d'un nom de domaine est soumis aux conditions
+          générales et particulières de DNS.be. dkp-consult s'engage à agir pour
+          le compte du client afin de réaliser l'enregistrement du nom de
+          domaine en conformité avec les données exigées par l'agent et DNS.be.
+          Si ces conditions ne peuvent être remplies, dkp-consult ne pourra en
+          aucun cas être tenu responsable.
+        </p>
+
+        <h2 class="text-2xl font-bold mb-4">2.Engagement du client</h2>
+        <p class="mb-4">
+          Le client accepte que les conditions générales relatives à
+          l’enregistrement d’un nom de domaine dans le domaine « .be » géré par
+          DNS.BE s’appliquent à la relation contractuelle qui le lie à DNS.BE.
+          Ces conditions peuvent être consultées sur le site Internet de DNS.
+        </p>
+        <p class="mb-4">
+          Le client exonère explicitement tous les intervenants liés à
+          l’enregistrement de son nom de domaine, de toute action judiciaire ou
+          extrajudiciaire initiée par un tiers au sujet d’un nom de domaine que
+          le client a enregistré à l’aide des produits et services proposés par
+          dkp-consult, et plus spécifiquement si le client a enregistré ou
+          utilisé ce nom de domaine de mauvaise foi et/ou si ce nom de domaine
+          viole les droits d’un tiers.
+        </p>
+
+        <h2 class="text-2xl font-bold mb-4">3. Durée et résiliation</h2>
+        <p class="mb-4">
+          Sauf disposition contraire écrite, la durée de tout contrat conclu
+          avec dkp-consult pour l’enregistrement d’un nom de domaine est de
+          douze (12) mois ou d’une durée supérieure qui sera précisée. Sauf
+          résiliation écrite signifiée à l’autre partie au moins deux (2) mois
+          avant l’échéance, ce contrat est automatiquement prolongé d’une même
+          durée quand il arrive à son échéance.
+        </p>
+
+        <p class="mb-4">
+          À défaut d’une résiliation ponctuelle signifiée par le client, ce
+          dernier reconnaît que le montant total dû pour la conservation de
+          l’enregistrement du nom de domaine sera également dûe pour la
+          prolongation de la durée, même si le client ne souhaite plus ce nom de
+          domaine, mais aurait tardé à le signaler.
+        </p>
+        <p class="mb-4">
+          dkp-consult peut également décider de ne plus fournir ses services
+          d’intermédiaire pour la prolongation d’un nom de domaine si un client
+          n’acquitte pas ponctuellement les montants dus pour son nom de
+          domaine.
+        </p>
+        <p class="mb-4">
+          En cas de perte éventuelle d’un nom de domaine pour prolongation
+          tardive, défaut de paiement, vol ou autre, le client ne pourra
+          réclamer aucune indemnisation à dkp-consult.
+        </p>
+        <p class="mb-4">
+          Des frais supplémentaires seront imputés pour l’éventuelle
+          réactivation ou sortie de quarantaine d’un nom de domaine.
+        </p>
+        <p class="mb-4">
+          En cas de demande de transfert du nom de domaine, des frais pourraient
+          être imputés, ceux-ci seront proportionnels aux frais exposés pour la
+          conservation du nom de domaine, il pourrait également exister des
+          frais de transfert, qui seront eux aussi à charge du client, le tout
+          sera majoré d’un forfait de 15€ par nom de domaine.
+        </p>
+      </section>
+    </main>
+    <!-- Pied de page de la page -->
+
+    <script src="../js/toggleMenu.js" type="text/javascript"></script>
   </body>
 </html>
