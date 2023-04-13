@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dkp-consult</title>
+    <!--Tailwind CSS -->
+    <!-- <link
+      rel="stylesheet"
+      href="./libraries/tailwindcss/tailwindcss-v3.3.1.css"
+    /> -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="./libraries/font-awesome/css/all.css" />
+    <!-- Custom css -->
+    <link rel="stylesheet" href="./styles/custom.css" />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="bg-gray-800 fixed w-full z-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center">
+            <div class="flex-shrink-0">
+              <a href="#" class="text-white font-bold text-xl">dkp-consult</a>
+            </div>
+          </div>
+          <div class="hidden md:block">
+            <a
+              href="#services"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              >Services</a
+            >
+          </div>
+          <div class="hidden md:block">
+            <a
+              href="#domaines"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              >Domaines</a
+            >
+          </div>
+          <div class="hidden md:block">
+            <a
+              href="#contact"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              >Contact</a
+            >
+          </div>
+
+          <div class="block md:hidden">
+            <button
+              type="button"
+              class="text-gray-500 hover:text-white focus:outline-none focus:text-white"
+              aria-label="Menu"
+              onclick="toggleMenu()"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="md:hidden" id="mobile-menu" style="display: none">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a
+            href="#services"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >Services</a
+          >
+        </div>
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a
+            href="#domaines"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >Domaines</a
+          >
+        </div>
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a
+            href="#contact"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >Contact resp</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8 min-h-screen">
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer class="bg-gray-800 pt-10 sm:mt-10 pt-10">
+      <div class="max-w-6xl m-auto text-gray-200 flex flex-wrap justify-left">
+        <!-- Col-1 -->
+        <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
+          <!-- Col Titre -->
+          <div class="text-xs uppercase text-gray-400 font-medium mb-6">
+            À propos de moi
+          </div>
+
+          <!-- Liens -->
+          <a class="my-3 block" href="/#">Intégrateur</a>
+          <a class="my-3 block" href="/#">Développeur front-end</a>
+          <a class="my-3 block" href="/#">Conseils en informatique</a>
+          <a class="my-3 block" href="/#">Conseils en finance personnelle</a>
+        </div>
+
+        <!-- Col-2 -->
+        <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
+          <!-- Col Titre -->
+          <div class="text-xs uppercase text-gray-400 font-medium mb-6">
+            Liens utiles
+          </div>
+
+          <!-- Liens -->
+          <a class="my-3 block" href="/#">CGV</a>
+          <a class="my-3 block" href="/#">Mentions légales</a>
+          <a class="my-3 block" href="/#">Politique de confidentialité</a>
+          <a class="my-3 block" href="/#">Cookies</a>
+        </div>
+
+        <!-- Col-3 -->
+        <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
+          <!-- Col Titre -->
+          <div class="text-xs uppercase text-gray-400 font-medium mb-6">
+            Contactez-moi
+          </div>
+
+          <!-- Liens -->
+          <div class="my-3 block">
+            <span class="text-gray-500">Email:</span> contact@dkp-consult.com
+          </div>
+        </div>
+        <!-- Col-4 -->
+        <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
+          <!-- Col Titre -->
+          <div class="text-xs uppercase text-gray-400 font-medium mb-6">
+            Suivez-nous
+          </div>
+
+          <!-- Liens réseaux sociaux -->
+          <div class="flex">
+            <a class="hover:text-gray-300 mr-4" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a class="hover:text-gray-300 mr-4" href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="hover:text-gray-300 mr-4" href="#">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- scripts section -->
+
+    <script src="./js/toggleMenu.js" type="text/javascript"></script>
+  </body>
+</html>
