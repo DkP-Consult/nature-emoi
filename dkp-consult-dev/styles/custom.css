@@ -1,8 +1,8 @@
 .custom {
-    background-image: url(https://picsum.photos/id/20/3670);
-    background-size: cover;
-    background-position: center;
-  }
+  background-image: url(https://picsum.photos/id/20/3670);
+  background-size: cover;
+  background-position: center;
+}
 
 /* Cacher le menu de navigation sur les très petits écrans */
 @media (max-width: 639px) {
@@ -78,4 +78,14 @@
 
 .menu-btn.open span:nth-child(3) {
   transform: rotate(-45deg) translate(7px, -6px);
+}
+
+
+.anchor-link-fix:before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 0;
+  height: 5em;
+  margin-top: -5em;
 }
