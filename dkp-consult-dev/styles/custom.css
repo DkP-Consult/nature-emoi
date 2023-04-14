@@ -89,3 +89,8 @@
   height: 5em;
   margin-top: -5em;
 }
+
+.img-custom {
+  background-image: url(../images/picsofme.jpg);
+  background-repeat: no-repeat;
+}
