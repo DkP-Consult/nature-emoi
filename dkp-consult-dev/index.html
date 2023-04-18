@@ -323,13 +323,13 @@
         <div class="max-w-3xl mx-auto text-center">
           <h2 class="text-3xl font-bold">Contactez-moi</h2>
           <p class="mt-4 text-gray-600">
-            Nous sommes toujours prêts à répondre à vos questions et à discuter
+            Je suis toujours prêts à répondre à vos questions et à discuter
             de vos projets.
           </p>
         </div>
         <div class="mt-10 max-w-3xl mx-auto">
           <form
-            action="#"
+            action="contact.php"
             method="POST"
             class="grid grid-cols-1 sm:grid-cols-2 gap-6"
           >
@@ -341,6 +341,7 @@
                 type="text"
                 name="name"
                 id="name"
+                required
                 placeholder="Votre nom complet"
                 class="w-full border border-gray-400 p-2 rounded-md"
               />
@@ -353,6 +354,7 @@
                 type="email"
                 name="email"
                 id="email"
+                required
                 placeholder="Votre adresse e-mail"
                 class="w-full border border-gray-400 p-2 rounded-md"
               />
@@ -367,6 +369,7 @@
                 id="subject"
                 placeholder="L'objet de votre message"
                 class="w-full border border-gray-400 p-2 rounded-md"
+                required
               />
             </div>
             <div class="sm:col-span-2">
@@ -379,6 +382,7 @@
                 rows="4"
                 placeholder="Votre message"
                 class="w-full border border-gray-400 p-2 rounded-md"
+                required
               ></textarea>
             </div>
             <div class="sm:col-span-2 text-right">
