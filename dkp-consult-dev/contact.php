@@ -1,4 +1,6 @@
 <?php
+header('Content-type: application/json');
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $to = "contact@dkp-consult.be";
   $name = htmlspecialchars(trim($_POST['name']));
@@ -8,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   
   // validation de l'adresse email
   if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    echo "L'adresse email n'est pas valide";
+    echo json_encode(array('success' => false, 'message' => 'L\'adresse email n\'est pas valide'));
     exit;
   }
   
@@ -32,13 +34,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   // Envoi de l'email
   if (mail($to, $subject, $message_body, $headers)) {
     // envoi de l'accusé de réception à l'utilisateur
+    
     $user_subject = "Accusé de réception : $subject";
     $user_message_body = "Bonjour $name,<br><br>Nous avons bien reçu votre message. Nous vous recontacterons dans les plus brefs délais.<br><br>Cordialement,<br>L'équipe de votre entreprise.";
     mail($email, $user_subject, $user_message_body, $headers);
     
-    echo "Message envoyé avec succès";
+    echo json_encode(array('success' => true, 'message' => 'Message envoyé avec succès'));
   } else {
-    echo "Une erreur est survenue. Veuillez réessayer plus tard.";
+    echo json_encode(array('success' => false, 'message' => 'Une erreur est survenue. Veuillez réessayer plus tard.'));
   }
 }
 ?>
