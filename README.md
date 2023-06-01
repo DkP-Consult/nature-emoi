@@ -11,3 +11,5 @@ Website : https://dkp-consult.be/
 Mail : contact@dkp-consult.be
 
 Enjoy ! :)
+
+Test for find what's auto mergin from an old branch
