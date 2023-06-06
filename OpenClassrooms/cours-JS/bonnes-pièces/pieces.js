@@ -1,4 +1,4 @@
-import { ajoutListenersAvis } from "./avis.js";
+import { ajoutListenersAvis, ajoutListenersEnvoyerAvis } from "./avis.js";
 
 // Récupération des pièces depuis le fichier JSON
 /*
@@ -10,6 +10,10 @@ const pieces = await reponse.json();
 
 const reponse = await fetch("http://localhost:8081/pieces/");
 const pieces = await reponse.json();
+
+ajoutListenersEnvoyerAvis(
+    
+)
 
 function genererPieces(pieces){
     for (let i = 0; i < pieces.length; i++) {
