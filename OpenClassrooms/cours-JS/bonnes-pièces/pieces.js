@@ -1,4 +1,4 @@
-import { ajoutListenersAvis, ajoutListenersEnvoyerAvis } from "./avis.js";
+import { ajoutListenersAvis, ajoutListenersEnvoyerAvis, afficherAvis } from "./avis.js";
 
 // Récupération des pièces depuis le fichier JSON
 /*
@@ -8,12 +8,36 @@ const pieces = await reponse.json();
 
 // Récupération des pièces depuis localhost:8081
 
-const reponse = await fetch("http://localhost:8081/pieces/");
-const pieces = await reponse.json();
+// const reponse = await fetch("http://localhost:8081/pieces/");
+// const pieces = await reponse.json(); 
 
-ajoutListenersEnvoyerAvis(
-    
-)
+// Transformation des pièces en JSON
+// const valeurPieces = JSON.stringify(pieces);
+
+// Récupération des pièces dans le localStorage
+let pieces = window.localStorage.getItem("pieces");
+if (pieces === null) {
+    // Récupération des pièces depuis l'API
+    const reponse = await fetch("http://localhost:8081/pieces/");
+    pieces = await reponse.json();
+    // Transformation des pièces en JSON
+    const valeurPieces = JSON.stringify(pieces);
+    // Stockage des informations dans le localStorage
+    window.localStorage.setItem("pieces", valeurPieces);
+} else {
+    pieces = JSON.parse(pieces);
+}
+// Stockage des informations dans le localStorage
+// window.localStorage.setItem("pieces", valeurPieces);
+
+
+ajoutListenersEnvoyerAvis()
+
+// Ajout du listener pour mettre à jour le localStorage
+const boutonMettreAJour = document.querySelector(".btn-maj");
+boutonMettreAJour.addEventListener("click", function() {
+    window.localStorage.removeItem("pieces");
+})
 
 function genererPieces(pieces){
     for (let i = 0; i < pieces.length; i++) {
@@ -57,6 +81,17 @@ function genererPieces(pieces){
 }
 
 genererPieces(pieces);
+
+for (let i = 0; i < pieces.length; i++) {
+    const id = pieces[i].id;
+    const avisJSON = window.localStorage.getItem(`article[data-id="${id}"]`);
+    const avis = JSON.parse(avisJSON);
+
+    if (avis !== null) {
+        const pieceElement = document.querySelector(`article[data-id="${id}"]`);
+        afficherAvis(pieceElement, avis);
+    }
+}
 
  //gestion des bouttons 
 const boutonTrier = document.querySelector(".btn-trier");
