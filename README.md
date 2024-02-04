@@ -1,13 +1,12 @@
-Hello,
-Welcome on my public execices repository.
-In this repository, I'll push exercices & personnal projects.
 
-Fell free to comment, review code and explain somes mistakes. I'm here for learning.
+# dkp-consult : sandbox folder
 
-If u want contact me :
+Ce repository contient une grosse partie des éléments réalisés durant mon apprentisage, son but n'est pas d'être représentatif et exhaustif de mon travail, il est ici, pour qu'au fur et à mesure de ma prise de compétence, j'aille la possibilité d'observer la progression et la mise en place de nouvelle pratique. 
 
-Twitter : https://twitter.com/DkP_Consult
-Website : https://dkp-consult.be/
-Mail : contact@dkp-consult.be
+J'y implémentes les projets des différents cours que je suis, j'y implémente également le code de certaines certifications fCC, OpenClassroom, etc. 
 
-Enjoy ! :)
+S'y trouve également l'historique de certains site que j'ai pu faire à un moment donné de mon apprentisage. 
+
+#### *Chaque ligne de code me fera progresser, mais je dois rester humble et me souvenir* 
+
+
