@@ -1,0 +1,58 @@
+  @import "../../styles/sass/partials/colors";
+  @import "../../styles/sass/partials/fonts";
+  @import "../../styles/sass/partials/variables";
+
+
+  .collapsible {
+      background-color: #777;
+      color: white;
+      cursor: pointer;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      z-index: 1;
+      line-height: 31px;
+      position: relative;
+      padding-left: 30px;
+      font-size: $lables-text;
+      color: $secondaryColorFour;
+      height: 31px;
+      background-color: $linesColorRgba;
+      margin-top: 10px;
+    }
+    
+    .active-collapsible, .collapsible:hover {
+      background-color: $linesColor;
+    }
+
+    .active-collabsible + .content {
+      padding: 18px;
+    }
+    .content {
+      padding: 0 18px;
+      max-height: 0;
+      transition: max-height 0.2s ease-out;
+      z-index: 1;
+      overflow: hidden;
+      position: relative;
+      font-size: $lables-text;
+      color: $secondaryColorFour;
+      
+    }
+    .collapsible::before {
+      background-image: url(../../images/icons/Vector.svg);
+      height: 20px;
+      position: absolute;
+      top: 7px;
+      left: 10px;
+      content: '';
+      background-size: cover;
+      width: 13px;
+    }
+
+    .collapsible-cat {
+      padding-top: 15px;
+      max-height: 200vh;
+    }

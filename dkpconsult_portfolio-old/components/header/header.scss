@@ -1,0 +1,107 @@
+@import "../../styles/sass/partials/fonts.scss" ;
+@import "../../styles/sass/partials/colors.scss";
+@import "../../styles/sass/partials/variables.scss";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: skyblue;
+}
+.header a {
+    text-decoration: none;
+    color: $secondaryColorFour;
+}
+.header {
+    height: 60px;
+    width: 100vw;
+    border-bottom: 1px solid $linesColor;
+    font-size: $lables-text;
+    display: flex;
+    justify-content: space-between;
+    line-height: 60px;
+}
+.name-header {
+    padding-right: 150px;
+    padding-left: 100px;
+}
+.hello-header {
+    border-left: 1px solid $linesColor;
+    border-right: 1px solid $linesColor;
+    padding: 0 30px;
+}
+.about-me-header {
+    border-right: 1px solid $linesColor;
+    padding: 0 30px;
+}
+.projects-header {
+    border-right: 1px solid $linesColor;
+    padding: 0 30px;
+}
+.contact-me-header {
+    border-left: 1px solid $linesColor;
+    padding: 0 30px;
+}
+.left-header {
+    display: flex;
+    flex-direction: row;
+}
+.space-content-header {
+    width: 100%;
+    height: 200px;
+}
+
+// Content space
+
+.space-content {
+
+    
+    height: 100px;
+
+
+}
+
+/* foooter */
+
+
+.footer a {
+    text-decoration: none;
+    color: $secondaryColorFour;
+}
+.footer {
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid $linesColor;
+    color: $secondaryColorFour;
+    line-height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.find-me {
+    padding-right: 75px;
+    padding-left: 75px;
+}
+.twitter-footer {
+    border-left: 1px solid $linesColor;
+    border-right: 1px solid $linesColor;
+    height: 49px;
+    width: 52px;
+    background-image: url(../../images/icons/twitter.svg);
+    opacity: 0.3;
+}
+.right {
+    display: flex;
+    flex-direction: row;
+}
+.github {
+    border-left: 1px solid $linesColor;
+    padding-left: 30px;
+}
+.github-logo {
+    height: 49px;
+    width: 52px;
+    background-image: url(../../images/icons/github.svg);
+    opacity: 0.3;
+}

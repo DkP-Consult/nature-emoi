@@ -1,0 +1,477 @@
+@import "../../styles/sass/partials/colors";
+@import "../../styles/sass/partials/fonts";
+@import "../../styles/sass/partials/variables";
+
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: Fira, Consolas;
+touch-action: none;
+}
+header {
+    border-bottom: 1px solid $linesColor;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+}
+body {
+    background-color: $background-color;
+} 
+.name a{
+    color: $secondaryColorOne;
+    text-decoration: none;
+    line-height: 56px;
+    padding-left: 18px;
+}
+.mobile {
+    width:calc(98vw - 2vw);
+    min-height: calc(100% - 30px);
+    border: solid 1px $linesColor;
+    border-radius: 8px;
+    background-color: $primaryColorThree;
+    position: absolute;
+    margin-left: 2vw;
+    margin-top: 2vh;
+    overflow: hidden;
+}
+.sidenav {
+    width:  calc(98vw - 2vw);
+    height: calc(100vh - 30px);
+    position: fixed;
+    border: solid 1px $linesColor;
+    border-radius: 8px;
+    z-index: 10;
+    top: 0;
+    left: -150vw;
+    background-color: $primaryColorTwo;
+    margin-top: 15px;
+    margin-bottom: 100px;
+    transition: left 0.5s ease;
+}
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: $secondaryColorFour;
+    display: block;
+    transition: 0.3s;
+    height: 100px;
+    border-bottom: 1px solid $linesColor;
+    line-height: 100px;
+}
+.sidenav a:hover {
+    color: $secondaryColorOne;
+}
+.sidenav.active {
+    left: 0;
+    width:calc(98vw - 2vw);
+    margin-left: 2vw;
+    margin-top: 2vh;
+    height: calc(100vh - 30px);
+    border: solid 1px $linesColor;
+    border-radius: 8px;
+    
+}
+.sidenav .close {
+    position: absolute;
+    top: -30px;
+    right: 10px;
+    font-size: 36px;
+    border-bottom: none;
+}
+.burger-icon span {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: $secondaryColorOne;
+    margin: 6px 0;
+}
+.burger {
+  padding-right: 18px;
+  padding-top: 10px;  
+}
+.name-navbar, .hello, .about-me, .projects, .contact-me {
+    height: 100px;
+    line-height: 100px;
+}
+.name-navbar a, .hello a, .about-me a, .projects a, .contact-me a {
+    padding-left: 60px;
+    height: 100px;
+    line-height: 100px;
+    
+}
+.footer-navbar {
+    border-radius: 8px;
+    border-top: 1px solid $linesColor;
+    height: 75px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 25px;
+    color: $secondaryColorFour;
+}
+.twitter {
+    border-left: 1px solid $linesColor;
+    border-right: 1px solid $linesColor;
+    height: 75px;
+    width: 75px;
+    background-image: url(../../images/icons/twitter.svg);
+    background-size: cover;
+    opacity: 0.3;
+    padding-left: 30px;
+    transition: opacity 1s ease;
+        &:hover {
+            opacity: 0.9;
+        }
+}
+.github {
+    height: 75px;
+    width: 75px;
+    background-image: url(../../images/icons/github.svg);
+    opacity: 0.3;
+    background-size: cover;
+    transition: opacity 1s ease;
+        &:hover {
+            opacity: 0.9;
+        }
+}
+.right {
+    display: flex;
+    flex-direction: row;
+}
+.left {
+    line-height: 75px;
+    padding-left: 60px;
+}
+.footer-navbar-about{
+    border-radius: 8px;
+    border-top: 1px solid #1E2D3D;
+    width: calc(98vw - 30px);
+    display: block;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 25px;
+    color: $secondaryColorFour;
+    margin-top: 64vh;
+}
+.twitter-about {
+    border-left: 1px solid $linesColor;
+    border-right: 1px solid $linesColor;
+    height: 82px;
+    width: 82px;
+    background-image: url(../../images/icons/twitter.svg);
+    background-size: cover;
+    opacity: 0.3;
+    padding-left: 30px;
+    transition: opacity 1s ease;
+    &:hover {
+        opacity: 0.9;
+    }
+}
+.github-about{
+    height: 82px;
+    width: 82px;
+    background-image: url(../../images/icons/github.svg);
+    opacity: 0.3;
+    background-size: cover;
+    transition: opacity 1s ease;
+    &:hover {
+        opacity: 0.9;
+    }
+}
+.right-about{
+    display: flex;
+    flex-direction: row;
+    padding-right: 0.5vw;
+}
+.left-about{
+    line-height: 75px;
+    padding-left: 60px;
+}
+.blurs-background {
+    width: 300px;
+    height: 418px;
+    position: absolute;
+    top: 154px;
+    background: rgb(67,217,173);
+    background: radial-gradient(circle, rgba(67,217,173,1) 0%, rgba(69,189,180,1) 10%, rgba(71,164,187,1) 20%, rgba(74,131,196,1) 30%, rgba(67,217,173,1) 40%, rgba(67,217,173,1) 50%, rgba(75,114,200,1) 60%, rgba(67,217,173,1) 70%, rgba(72,157,188,1) 80%, rgba(70,182,182,1) 90%, rgba(67,217,173,1) 100%); 
+    filter: blur(155px); 
+
+    /* background: rgb(67,217,173);
+    background: linear-gradient(90deg, rgba(67,217,173,1) 10%, rgba(75,114,200,1) 50%, rgba(67,217,173,1) 90%); 
+    filter: blur(150px); */
+
+   /* background-image: linear-gradient(90deg,
+        hsl(162deg 66% 56%) 0%,
+        hsl(207deg 100% 45%) 29%,
+        hsl(191deg 100% 43%) 43%,
+        hsl(191deg 100% 43%) 57%,
+        hsl(207deg 100% 45%) 71%,
+        hsl(162deg 66% 56%) 100%);
+    filter:blur(75px); */
+}
+.hello-all {
+    color: $secondaryColorFour;
+    font-size: $body-text;
+    position: absolute;
+    top: 150px;
+    left: 27px;
+}
+.dkp-consult {
+    color: $secondaryColorFour;
+    font-size: $headline-text;
+    position: relative;
+    top: 108px;
+    left: 50px;
+    width: 80vw;
+    padding-bottom: 5px;
+}
+.underline-letter {
+    border-bottom: solid 4px $accentColorThree;
+}
+.babydev {
+    color: $accentColorTwo;
+    font-size: 20px;
+    position: relative;
+    top: 120px;
+    left: 80px;
+    width: 300px;
+}
+.find-me {
+    color: $secondaryColorOne;
+    font-size: $code-snippets;
+    position: relative;
+    top: 42vh;
+    left: 18vw;
+    width: 58vw;
+    margin-bottom: 10vh;
+    height: 10vh;
+}
+.find-me-code {
+    color: $gradientsColorOne;
+    position: relative;
+    left: 50px;
+}
+.find-me-code a {
+    color: $accentColorThree;
+    text-decoration: none;
+}
+.work-in-progress {
+    color: $secondaryColorFour;
+    padding: 15px;
+
+    a {
+        text-decoration: none;
+        color: $secondaryColorOne;
+    }
+
+    a:hover {
+        color: $secondaryColorThree;
+    }
+}
+
+.header a {
+    text-decoration: none;
+    color: $secondaryColorFour;
+    transition: color 1s ease;
+    &:hover {
+        color: #FEA55F;
+    }
+}
+.header {
+    height: 60px;
+    width: 100vw;
+    border-bottom: 1px solid $linesColor;
+    font-size: $lables-text;
+    display: flex;
+    justify-content: space-between;
+    line-height: 60px;
+}
+.name-header {
+    padding-right: 150px;
+    padding-left: 100px;
+}
+.hello-header {
+    border-left: 1px solid $linesColor;
+    border-right: 1px solid $linesColor;
+    padding: 0 30px;
+}
+.about-me-header {
+    border-right: 1px solid $linesColor;
+    padding: 0 30px;
+}
+.projects-header {
+    border-right: 1px solid $linesColor;
+    padding: 0 30px;
+}
+.contact-me-header {
+    border-left: 1px solid $linesColor;
+    padding: 0 30px;
+}
+.left-header {
+    display: flex;
+    flex-direction: row;
+}
+.space-content-header {
+    width: 100%;
+    height: 200px;
+}
+
+
+.footer a {
+    text-decoration: none;
+    color: $secondaryColorFour;
+}
+.footer {
+    width: 96vw;
+    height: 50px;
+    border-top: 1px solid $linesColor;
+    color: $secondaryColorFour;
+    line-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 13px;
+}
+.w-about {
+    margin-left: 2vw;
+}
+.find-me-footer {
+    padding-right: 75px;
+    padding-left: 75px;
+}
+.twitter-footer {
+    border-left: 1px solid $linesColor;
+    border-right: 1px solid $linesColor;
+    height: 49px;
+    width: 52px;
+    background-image: url(../../images/icons/twitter.svg);
+    opacity: 0.3;
+    transition: opacity 1s ease;
+    &:hover {
+        opacity: 1;
+    }
+}
+.right {
+    display: flex;
+    flex-direction: row;
+}
+.left-footer {
+    display: flex;
+}
+.github-footer {
+    border-left: 1px solid $linesColor;
+    padding-left: 30px;
+    opacity: 0.3;
+    transition: opacity 1s ease;
+    &:hover {
+        opacity: 1;
+    }
+}
+.github-footer-logo {
+    height: 49px;
+    width: 52px;
+    background-image: url(../../images/icons/github.svg);
+    opacity: 1;
+}
+
+.code-preview {
+    width: 35vw;
+    height: 150px;
+    background-color: aqua;
+    position: absolute;
+    left: 50%;
+    background-image: url(../../images/desktop-v02.jpeg);
+    background-size: cover;
+    border-radius: 8px;
+    opacity: 0.7;
+    top: 40%;
+    border: 1px solid $accentColorTwo;
+    mix-blend-mode: difference;
+}
+.screen-one {
+    width: 35vw;
+    height: 150px;
+    background-color: aqua;
+    position: absolute;
+    top: 115%;
+    background-image: url(../../images/ide-05.png);
+    background-size: cover ;
+    border-radius: 8px;
+    mix-blend-mode: color-dodge;
+    left: 50px;
+    border: 1px solid $gradientsColorOne;
+}
+.screen-two {
+    width: 35vw;
+    height: 150px;
+    background-color: aqua;
+    position: absolute;
+    top: -115%;
+    background-image: url(../../images/dev-01.png);
+    background-size: cover ;
+    border-radius: 8px;
+    mix-blend-mode: color-dodge;
+    left: -50px;
+    border: 1px solid $accentColorThree;
+}
+.code-preview ul {
+    list-style: none;
+}
+
+@media screen and (min-width: 900px) {
+    .name {
+        display: none;
+    }
+    header {
+        border-bottom: none;
+    }
+    .burger {
+        display: none;
+    }
+    .footer-navbar-about {
+        display: none;
+    }
+    .mobile {
+        overflow-y: auto;
+    }
+    .find-me {
+        padding-bottom: 10vh;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header {
+        display: none;
+    }
+    .mobile {
+        overflow-y: auto;
+    }
+    .find-me {
+        padding-bottom: 10vh;
+    }
+    .code-preview {
+        display: none;
+    }
+    .find-me-footer {
+        display: none;
+    }
+}
