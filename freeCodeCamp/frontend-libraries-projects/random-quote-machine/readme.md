@@ -35,3 +35,38 @@ You can build your project by using this CodePen template and clicking Save to c
 Once you're done, submit the URL to your working project with all its tests passing.
 
 Note: Twitter does not allow links to be loaded in an iframe. Try using the target="_blank" or target="_top" attribute on the #tweet-quote element if your tweet won't load. target="_top" will replace the current tab so make sure your work is saved.
+
+
+------------French version--------------------
+
+Objectif : Construire une application qui est fonctionnellement similaire à celle-ci : https://random-quote-machine.freecodecamp.rocks/.
+
+Remplissez les histoires d'utilisateurs ci-dessous et faites passer tous les tests. Utilisez les bibliothèques ou APIs dont vous avez besoin. Donnez-lui votre propre style personnel.
+
+Vous pouvez utiliser n'importe quel mélange de HTML, JavaScript, CSS, Bootstrap, SASS, React, Redux et jQuery pour compléter ce projet. Vous devriez utiliser un framework frontend (comme React par exemple) car cette section concerne l'apprentissage des frameworks frontend. Les technologies supplémentaires non répertoriées ci-dessus ne sont pas recommandées et leur utilisation se fait à vos propres risques. Nous envisageons de prendre en charge d'autres frameworks frontend comme Angular et Vue, mais ils ne sont pas actuellement pris en charge. Nous accepterons et tenterons de corriger tous les rapports de problèmes qui utilisent la pile technologique suggérée pour ce projet. Bon codage !
+
+Histoire d'utilisateur #1 : Je peux voir un élément wrapper avec un id correspondant="quote-box". ✔
+
+Histoire d'utilisateur #2 : À l'intérieur de #quote-box, je peux voir un élément avec un id correspondant="text". ✔
+
+Histoire d'utilisateur #3 : À l'intérieur de #quote-box, je peux voir un élément avec un id correspondant="author". ✔
+
+Histoire d'utilisateur #4 : À l'intérieur de #quote-box, je peux voir un élément cliquable avec un id correspondant="new-quote". ✔
+
+Histoire d'utilisateur #5 : À l'intérieur de #quote-box, je peux voir un élément a cliquable avec un id correspondant="tweet-quote". ✔
+
+Histoire d'utilisateur #6 : Au chargement initial, ma machine à citation affiche une citation aléatoire dans l'élément avec l'id="text". ✔
+
+Histoire d'utilisateur #7 : Au chargement initial, ma machine à citation affiche l'auteur de la citation aléatoire dans l'élément avec l'id="author". ✔
+
+Histoire d'utilisateur #8 : Lorsque le bouton #new-quote est cliqué, ma machine à citation doit récupérer une nouvelle citation et l'afficher dans l'élément #text. ✔
+
+Histoire d'utilisateur #9 : Ma machine à citation doit récupérer l'auteur de la nouvelle citation lorsque le bouton #new-quote est cliqué et l'afficher dans l'élément #author. ✔
+
+Histoire d'utilisateur #10 : Je peux tweeter la citation actuelle en cliquant sur l'élément a #tweet-quote. Cet élément a devrait inclure le chemin "twitter.com/intent/tweet" dans son attribut href pour tweeter la citation actuelle. ✔
+
+Histoire d'utilisateur #11 : L'élément wrapper #quote-box doit être centré horizontalement. Veuillez exécuter les tests avec le niveau de zoom du navigateur à 100% et la page maximisée.
+
+Vous pouvez construire votre projet en utilisant ce modèle CodePen et en cliquant sur Enregistrer pour créer votre propre stylo. Ou vous pouvez utiliser ce lien CDN pour exécuter les tests dans n'importe quel environnement que vous aimez : https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js
+
+Une fois que vous avez terminé, soumettez l'URL de votre projet fonctionnel avec tous ses tests passant.

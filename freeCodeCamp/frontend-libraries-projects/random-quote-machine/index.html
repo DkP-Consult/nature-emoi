@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- Tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Random Quote Machine</title>
+</head>
+
+<body>
+
+    <section class="container, flex flex-col justify-center items-center h-screen mx-auto w-2/3" id="quote-box">
+        <!-- title -->
+        <div class="title">
+          <h2>our reviews</h2>
+          <div class="underline"></div>
+        </div>
+        <!-- review -->
+        <article class="review">
+          <div class="img-container">
+            <img src="person-1.jpeg" id="person-img" alt="" />
+          </div>
+          <h4 id="author">sara jones</h4>
+          <p id="job">ux designer</p>
+          <p id="text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Dignissimos magnam sunt unde voluptates ab soluta expedita
+            aspernatur vero consequatur excepturi!
+          </p>
+          <!-- prev next button -->
+          <div class="button-container">
+            <button class="prev-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          <!-- random button -->
+          <button class="random-btn" id="new-quote">surpise me</button>
+          <a id="tweet-quote" href="twitter.com/intent/tweet" target="_blank">
+              <i class="fab fa-twitter"></i> Tweeter
+          </a>
+        </article>
+      </section>
+    </main>
+
+
+</body>
+<script src="app.js"></script>
+<!-- fCC test -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
