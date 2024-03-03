@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Drum Machine</title>
+
+
+</head>
+
+<body>
+
+    <div id="drum-machine" class="container">
+        <div id="display" class="display">Cliquez sur un pad ou utilisez le clavier</div>
+        <div class="row">
+            <!-- Exemple de drum pad -->
+            <div class="drum-pad col-md-4" id="Cev_H2" data-key="Q">Q
+                <audio class="clip" id="Q" src="audio/Cev_H2.mp3"></audio>
+            </div>
+            <div class="drum-pad col-md-4" id="Dsc_Oh" data-key="W">W
+                <audio class="clip" id="W" src="audio/Dsc_Oh.mp3"></audio>
+            </div>
+            <div class="drum-pad col-md-4" id="Heater-1" data-key="E">E
+                <audio class="clip" id="E" src="audio/Heater-1.mp3"></audio>
+            </div>
+            <div class="drum-pad col-md-4" id="Heater-2" data-key="A">A
+                <audio class="clip" id="A" src="audio/Heater-2.mp3"></audio>
+            </div>
+            <div class="drum-pad col-md-4" id="Heater-3" data-key="S">S
+                <audio class="clip" id="S" src="audio/Heater-3.mp3"></audio>
+            </div>
+            <div class="drum-pad col-md-4" id="Heater-4_1" data-key="D">D
+                <audio class="clip" id="D" src="audio/Heater-4_1.mp3"></audio>
+            </div>
+            <div class="drum-pad col-md-4" id="Heater-6" data-key="Z">Z
+                <audio class="clip" id="Z" src="audio/Heater-6.mp3"></audio>
+            </div>
+            <div class="drum-pad col-md-4" id="Kick_n_Hat" data-key="X">X
+                <audio class="clip" id="X" src="audio/Kick_n_Hat.mp3"></audio>
+            </div>
+            <div class="drum-pad col-md-4" id="RP4_KICK_1" data-key="C">C
+                <audio class="clip" id="C" src="audio/RP4_KICK_1.mp3"></audio>
+            </div>
+            <!-- Ajoutez les autres pads ici -->
+        </div>
+    </div>
+
+
+</body>
+
+
+<!-- fCC test -->
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<script src="app.js"></script>
+
+</html>
