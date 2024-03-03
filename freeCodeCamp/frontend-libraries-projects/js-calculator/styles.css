@@ -1,0 +1,8 @@
+.calculator {
+    max-width: 400px;
+    margin: auto;
+}
+
+.calculator .display {
+    margin-bottom: 10px;
+}
