@@ -18,9 +18,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!isRunning) {
             isRunning = true;
             // Mise à jour initiale de l'affichage pour montrer la durée totale avant de commencer le décompte
-            
+            if (timerInterval === null) {
+                timeLeft = isSession ? sessionLength * 60 : breakLength * 60;
+            }
             updateTimeDisplay();
-    
+
+
             timerInterval = setInterval(() => {
                 timeLeft--; // Commence le décompte après la première mise à jour de l'affichage
                 if (timeLeft < 0) {
@@ -39,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
             isRunning = false;
         }
     }
-    
+
 
     // Fonction pour basculer entre les sessions et les pauses
     function switchTimer() {
@@ -76,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('reset').addEventListener('click', resetTimer);
 
     // Ajout des événements pour incrémenter et décrémenter la durée des sessions et des pauses...
-    
+
 
 
     document.getElementById('break-decrement').addEventListener('click', () => {
