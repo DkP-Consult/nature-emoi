@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+    <title>25 + 5 Clock</title>
+</head>
+
+<body>
+
+<div class="container text-center mt-5">
+    <h1>Horloge 25 + 5</h1>
+    <div id="timer-label">Session</div>
+    <div id="time-left">25:00</div>
+    <div class="controls">
+        <button id="start_stop" class="btn btn-primary">Start / Stop</button>
+        <button id="reset" class="btn btn-secondary">Reset</button>
+    </div>
+    <div id="break-label">Durée de la pause</div>
+    <button id="break-decrement" class="btn btn-info">-</button>
+    <span id="break-length">5</span>
+    <button id="break-increment" class="btn btn-info">+</button>
+    <div id="session-label">Durée de la session</div>
+    <button id="session-decrement" class="btn btn-info">-
+    </button>
+    <span id="session-length">25</span>
+    <button id="session-increment" class="btn btn-info">+</button>
+</div>
+
+<audio id="beep" src="audio/bleep.mp3"></audio>
+
+
+</body>
+<script src="app.js"></script>
+<!-- fCC test -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
