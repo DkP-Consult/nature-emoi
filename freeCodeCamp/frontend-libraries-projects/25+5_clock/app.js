@@ -18,9 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!isRunning) {
             isRunning = true;
             // Mise à jour initiale de l'affichage pour montrer la durée totale avant de commencer le décompte
-            if (timerInterval === null) {
+            /* if (timerInterval === null) {
                 timeLeft = isSession ? sessionLength * 60 : breakLength * 60;
-            }
+            } */
             updateTimeDisplay();
 
 
