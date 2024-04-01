@@ -1,0 +1,32 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+#chart-container {
+    text-align: center;
+    width: 100%;
+}
+
+svg {
+    background-color: #f9f9f9;
+}
+
+.bar {
+    fill: steelblue;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+}
+
+.tick text {
+    font-size: 12px;
+}
