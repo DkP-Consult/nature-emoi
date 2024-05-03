@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heatmap</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers votre fichier CSS -->
+    <script src="d3.v7.js" defer></script> <!-- Lien vers D3.js -->
+    <script src="app.js" defer></script> <!-- Lien vers votre fichier JavaScript -->
+</head>
+<body>
+    <h1 id="title">Heat Map</h1>
+    <!-- Description -->
+    <p id="description">Visualisation des données de température globale</p>
+    <!-- Carte thermique -->
+    <svg id="heat-map" width="960" height="600"></svg>
+    <!-- Légende -->
+    <svg id="legend" width="200" height="50">
+      <rect x="10" y="10" width="20" height="20" fill="blue"></rect>
+      <rect x="40" y="10" width="20" height="20" fill="green"></rect>
+      <rect x="70" y="10" width="20" height="20" fill="yellow"></rect>
+      <rect x="100" y="10" width="20" height="20" fill="red"></rect>
+      <text x="135" y="25" fill="black">Légende</text>
+    </svg>  
+
+        <!-- Le script de test de FreeCodeCamp pour vérifier les user stories -->
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

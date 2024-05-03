@@ -1,0 +1,19 @@
+#title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  #description {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #legend {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .cell {
+    stroke: #fff;
+  }
